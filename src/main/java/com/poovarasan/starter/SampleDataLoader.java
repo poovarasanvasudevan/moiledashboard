@@ -1,0 +1,47 @@
+package com.poovarasan.starter;
+
+import com.poovarasan.models.Role;
+import com.poovarasan.models.User;
+import com.poovarasan.service.RoleService;
+import com.poovarasan.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.ApplicationArguments;
+import org.springframework.boot.ApplicationRunner;
+import org.springframework.stereotype.Component;
+
+/**
+ * Created by poovarasanv on 17/4/17.
+ * Project : mobiledashboard
+ */
+@Component
+public class SampleDataLoader implements ApplicationRunner {
+
+    private final UserService userService;
+    private final RoleService roleService;
+
+    @Autowired
+    public SampleDataLoader(UserService userService, RoleService roleService) {
+        this.userService = userService;
+        this.roleService = roleService;
+    }
+
+    @Override
+    public void run(ApplicationArguments args) throws Exception {
+
+        String roles[] = {"ADMIN", "USER", "REPORT", "API"};
+        for (String r : roles) {
+            Role role = new Role();
+            role.setName(r);
+            roleService.save(role);
+        }
+
+        String users[] = {"poosan", "poosan1", "poosan2", "poosan3"};
+        for (String u : users) {
+            User user = new User();
+            user.setUsername(u);
+            user.setPassword(u);
+
+            userService.save(user);
+        }
+    }
+}
