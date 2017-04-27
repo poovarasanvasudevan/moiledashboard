@@ -163,7 +163,7 @@ p a>code:hover{color:rgba(0,0,0,.9)}
 #toc a{text-decoration:none}
 #toc a:active{text-decoration:underline}
 #toctitle{color:#7a2518;font-size:1.2em}
-@media only screen and (min-width:768px){ #toctitle{font-size:1.375em}
+@media only screen and (min-width:768px){#toctitle{font-size:1.375em}
 body.toc2{padding-left:15em;padding-right:0}
 #toc.toc2{margin-top:0!important;background-color:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #efefed;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
 #toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
@@ -528,108 +528,108 @@ table.CodeRay td.code>pre{padding:0}
 <li><a href="#_definitions">2. Definitions</a>
 <ul class="sectlevel2">
 <li><a href="#_6c25ab3bcdecc741d9f01b3bf28ff16d">2.1. AbstractJsonSchemaProperty«object»</a></li>
-<li><a href="#_b07c66a481263dede2349ac223d023af">2.2. Collection«Link»</a></li>
-<li><a href="#_4b229d17859bcc4c429e300623e2304f">2.3. Collection«Role»</a></li>
-<li><a href="#_e411467c6995420fb08272b4cf992926">2.4. Collection«User»</a></li>
-<li><a href="#_f720601e8234a7d1eb8ee31c6bbcce35">2.5. Collection«string»</a></li>
-<li><a href="#_httpentity">2.6. HttpEntity</a></li>
-<li><a href="#_item">2.7. Item</a></li>
-<li><a href="#_jsonschema">2.8. JsonSchema</a></li>
-<li><a href="#_link">2.9. Link</a></li>
-<li><a href="#_message">2.10. Message</a></li>
-<li><a href="#_messageformat">2.11. MessageFormat</a></li>
-<li><a href="#_repositorylinksresource">2.12. RepositoryLinksResource</a></li>
-<li><a href="#_repositorysearchesresource">2.13. RepositorySearchesResource</a></li>
-<li><a href="#_resourcesupport">2.14. ResourceSupport</a></li>
-<li><a href="#_5956193908f022f308de9cdb36ac9a8b">2.15. Resources«Link»</a></li>
-<li><a href="#_072aa28c1b3060cb86fefb0e6fcf9406">2.16. Resources«Role»</a></li>
-<li><a href="#_95c27685fb3786310947ea2de25ecc64">2.17. Resources«User»</a></li>
+<li><a href="#_apps">2.2. Apps</a></li>
+<li><a href="#_d6a4847683c84b693242956703126ad1">2.3. Collection«Apps»</a></li>
+<li><a href="#_b07c66a481263dede2349ac223d023af">2.4. Collection«Link»</a></li>
+<li><a href="#_4b229d17859bcc4c429e300623e2304f">2.5. Collection«Role»</a></li>
+<li><a href="#_e411467c6995420fb08272b4cf992926">2.6. Collection«User»</a></li>
+<li><a href="#_f720601e8234a7d1eb8ee31c6bbcce35">2.7. Collection«string»</a></li>
+<li><a href="#_item">2.8. Item</a></li>
+<li><a href="#_jsonschema">2.9. JsonSchema</a></li>
+<li><a href="#_link">2.10. Link</a></li>
+<li><a href="#_repositorylinksresource">2.11. RepositoryLinksResource</a></li>
+<li><a href="#_resourcesupport">2.12. ResourceSupport</a></li>
+<li><a href="#_48aa17fd90b9eb7d21da9958dc56b111">2.13. Resources«Apps»</a></li>
+<li><a href="#_5956193908f022f308de9cdb36ac9a8b">2.14. Resources«Link»</a></li>
+<li><a href="#_072aa28c1b3060cb86fefb0e6fcf9406">2.15. Resources«Role»</a></li>
+<li><a href="#_95c27685fb3786310947ea2de25ecc64">2.16. Resources«User»</a></li>
+<li><a href="#_d41ab31641c81a9cbba20b0bc9de934d">2.17. Resource«Apps»</a></li>
 <li><a href="#_45f492ff7f2355dd9fe8670f966c13b1">2.18. Resource«Role»</a></li>
 <li><a href="#_7cfe2818d2924b9c0f220f9e272581a5">2.19. Resource«User»</a></li>
-<li><a href="#_responsemodel">2.20. ResponseModel</a></li>
-<li><a href="#_role">2.21. Role</a></li>
-<li><a href="#_timestamp">2.22. Timestamp</a></li>
-<li><a href="#_user">2.23. User</a></li>
+<li><a href="#_role">2.20. Role</a></li>
+<li><a href="#_timestamp">2.21. Timestamp</a></li>
+<li><a href="#_user">2.22. User</a></li>
 </ul>
 </li>
 <li><a href="#_paths">3. Resources</a>
 <ul class="sectlevel2">
-<li><a href="#_entity_metadata_services_resource">3.1. Entity Metadata Services</a>
+<li><a href="#_apps_entity_resource">3.1. Apps Entity</a></li>
+<li><a href="#_entity_metadata_services_resource">3.2. Entity Metadata Services</a>
 <ul class="sectlevel3">
-<li><a href="#_schemausingget_1">3.1.1. schema</a></li>
-<li><a href="#_alpsoptionsusingoptions_1">3.1.2. alpsOptions</a></li>
-<li><a href="#_schemausingget">3.1.3. schema</a></li>
-<li><a href="#_alpsoptionsusingoptions">3.1.4. alpsOptions</a></li>
+<li><a href="#_schemausingget_1">3.2.1. schema</a></li>
+<li><a href="#_alpsoptionsusingoptions_2">3.2.2. alpsOptions</a></li>
+<li><a href="#_schemausingget">3.2.3. schema</a></li>
+<li><a href="#_alpsoptionsusingoptions">3.2.4. alpsOptions</a></li>
 </ul>
 </li>
-<li><a href="#_role_entity_resource">3.2. Role Entity</a>
+<li><a href="#_role_entity_resource">3.3. Role Entity</a>
 <ul class="sectlevel3">
-<li><a href="#_postcollectionresourceusingpost">3.2.1. postCollectionResource</a></li>
-<li><a href="#_getcollectionresourceusingget">3.2.2. getCollectionResource</a></li>
-<li><a href="#_headcollectionresourceusinghead">3.2.3. headCollectionResource</a></li>
-<li><a href="#_optionsforcollectionresourceusingoptions">3.2.4. optionsForCollectionResource</a></li>
-<li><a href="#_getitemresourceusingget">3.2.5. getItemResource</a></li>
-<li><a href="#_putitemresourceusingput">3.2.6. putItemResource</a></li>
-<li><a href="#_deleteitemresourceusingdelete">3.2.7. deleteItemResource</a></li>
-<li><a href="#_patchitemresourceusingpatch">3.2.8. patchItemResource</a></li>
-<li><a href="#_headforitemresourceusinghead">3.2.9. headForItemResource</a></li>
-<li><a href="#_optionsforitemresourceusingoptions">3.2.10. optionsForItemResource</a></li>
+<li><a href="#_postcollectionresourceusingpost_1">3.3.1. postCollectionResource</a></li>
+<li><a href="#_getcollectionresourcecompactusingget_1">3.3.2. getCollectionResourceCompact</a></li>
+<li><a href="#_headcollectionresourceusinghead_1">3.3.3. headCollectionResource</a></li>
+<li><a href="#_optionsforcollectionresourceusingoptions_1">3.3.4. optionsForCollectionResource</a></li>
+<li><a href="#_getitemresourceusingget_1">3.3.5. getItemResource</a></li>
+<li><a href="#_putitemresourceusingput_1">3.3.6. putItemResource</a></li>
+<li><a href="#_deleteitemresourceusingdelete_1">3.3.7. deleteItemResource</a></li>
+<li><a href="#_patchitemresourceusingpatch_1">3.3.8. patchItemResource</a></li>
+<li><a href="#_headforitemresourceusinghead_1">3.3.9. headForItemResource</a></li>
+<li><a href="#_optionsforitemresourceusingoptions_1">3.3.10. optionsForItemResource</a></li>
 </ul>
 </li>
-<li><a href="#_socket_resource">3.3. Socket</a>
+<li><a href="#_role_related_services_resource">3.4. Role Related Services</a>
 <ul class="sectlevel3">
-<li><a href="#_pingsocketusingpost">3.3.1. Ping the Websocket User</a></li>
-<li><a href="#_sendtouserusingpost">3.3.2. Ping the MQTT User</a></li>
+<li><a href="#_getallroleusingget">3.4.1. List All The Roles</a></li>
+<li><a href="#_getuserrolesusingget">3.4.2. List All The Users associated to that role</a></li>
 </ul>
 </li>
-<li><a href="#_user_entity_resource">3.4. User Entity</a>
+<li><a href="#_socket_related_services_resource">3.5. Socket Related Services</a>
 <ul class="sectlevel3">
-<li><a href="#_postcollectionresourceusingpost_1">3.4.1. postCollectionResource</a></li>
-<li><a href="#_getcollectionresourceusingget_1">3.4.2. getCollectionResource</a></li>
-<li><a href="#_headcollectionresourceusinghead_1">3.4.3. headCollectionResource</a></li>
-<li><a href="#_optionsforcollectionresourceusingoptions_1">3.4.4. optionsForCollectionResource</a></li>
-<li><a href="#_getitemresourceusingget_1">3.4.5. getItemResource</a></li>
-<li><a href="#_putitemresourceusingput_1">3.4.6. putItemResource</a></li>
-<li><a href="#_deleteitemresourceusingdelete_1">3.4.7. deleteItemResource</a></li>
-<li><a href="#_patchitemresourceusingpatch_1">3.4.8. patchItemResource</a></li>
-<li><a href="#_headforitemresourceusinghead_1">3.4.9. headForItemResource</a></li>
-<li><a href="#_optionsforitemresourceusingoptions_1">3.4.10. optionsForItemResource</a></li>
+<li><a href="#_pingsocketusingpost">3.5.1. Ping the Websocket User</a></li>
+<li><a href="#_sendtouserusingpost">3.5.2. Ping the MQTT User</a></li>
 </ul>
 </li>
-<li><a href="#_user_entity_search_resource">3.5. User Entity Search</a>
+<li><a href="#_user_entity_resource">3.6. User Entity</a>
 <ul class="sectlevel3">
-<li><a href="#_listsearchesusingget">3.5.1. listSearches</a></li>
-<li><a href="#_headforsearchesusinghead">3.5.2. headForSearches</a></li>
-<li><a href="#_optionsforsearchesusingoptions">3.5.3. optionsForSearches</a></li>
-<li><a href="#_findbyusernameusingget">3.5.4. /findByUsername</a></li>
+<li><a href="#_postcollectionresourceusingpost_2">3.6.1. postCollectionResource</a></li>
+<li><a href="#_getcollectionresourcecompactusingget_2">3.6.2. getCollectionResourceCompact</a></li>
+<li><a href="#_headcollectionresourceusinghead_2">3.6.3. headCollectionResource</a></li>
+<li><a href="#_optionsforcollectionresourceusingoptions_2">3.6.4. optionsForCollectionResource</a></li>
+<li><a href="#_getitemresourceusingget_2">3.6.5. getItemResource</a></li>
+<li><a href="#_putitemresourceusingput_2">3.6.6. putItemResource</a></li>
+<li><a href="#_deleteitemresourceusingdelete_2">3.6.7. deleteItemResource</a></li>
+<li><a href="#_patchitemresourceusingpatch_2">3.6.8. patchItemResource</a></li>
+<li><a href="#_headforitemresourceusinghead_2">3.6.9. headForItemResource</a></li>
+<li><a href="#_optionsforitemresourceusingoptions_2">3.6.10. optionsForItemResource</a></li>
 </ul>
 </li>
-<li><a href="#_user_related_services_resource">3.6. User Related Services</a>
+<li><a href="#_user_related_services_resource">3.7. User Related Services</a>
 <ul class="sectlevel3">
-<li><a href="#_getalluserusingget">3.6.1. List All The Users</a></li>
-<li><a href="#_createuserusingpost">3.6.2. Create User</a></li>
-<li><a href="#_deleteuserusingdelete">3.6.3. Delete User</a></li>
-<li><a href="#_meusingget">3.6.4. Get The current Logged User</a></li>
-<li><a href="#_meroleusingget">3.6.5. Get The current Logged Users Role</a></li>
-<li><a href="#_sendmessageusingpost">3.6.6. Sends the Message to User</a></li>
-<li><a href="#_userroleusingget">3.6.7. Get Roles For the User</a></li>
-<li><a href="#_updateuserusingput">3.6.8. Update User</a></li>
+<li><a href="#_getalluserusingget">3.7.1. List All The Users</a></li>
+<li><a href="#_userappsusingget">3.7.2. Get Roles For the User</a></li>
+<li><a href="#_createuserusingpost">3.7.3. Create User</a></li>
+<li><a href="#_deleteuserusingdelete">3.7.4. Delete User</a></li>
+<li><a href="#_getuserusingget">3.7.5. List The User</a></li>
+<li><a href="#_meusingget">3.7.6. Get The current Logged User</a></li>
+<li><a href="#_meroleusingget">3.7.7. Get The current Logged Users Role</a></li>
+<li><a href="#_sendmessageusingpost">3.7.8. Sends the Message to User</a></li>
+<li><a href="#_userroleusingget">3.7.9. Get Roles For the User</a></li>
+<li><a href="#_updateuserusingput">3.7.10. Update User</a></li>
 </ul>
 </li>
-<li><a href="#_profile-controller_resource">3.7. Profile-controller</a>
+<li><a href="#_profile-controller_resource">3.8. Profile-controller</a>
 <ul class="sectlevel3">
-<li><a href="#_listallformsofmetadatausingget">3.7.1. listAllFormsOfMetadata</a></li>
-<li><a href="#_profileoptionsusingoptions">3.7.2. profileOptions</a></li>
+<li><a href="#_listallformsofmetadatausingget">3.8.1. listAllFormsOfMetadata</a></li>
+<li><a href="#_profileoptionsusingoptions">3.8.2. profileOptions</a></li>
 </ul>
 </li>
-<li><a href="#_repository-controller_resource">3.8. Repository-controller</a>
+<li><a href="#_repository-controller_resource">3.9. Repository-controller</a>
 <ul class="sectlevel3">
-<li><a href="#_listrepositoriesusingget">3.8.1. listRepositories</a></li>
-<li><a href="#_headforrepositoriesusinghead">3.8.2. headForRepositories</a></li>
-<li><a href="#_optionsforrepositoriesusingoptions">3.8.3. optionsForRepositories</a></li>
-<li><a href="#_listrepositoriesusingget_1">3.8.4. listRepositories</a></li>
-<li><a href="#_headforrepositoriesusinghead_1">3.8.5. headForRepositories</a></li>
-<li><a href="#_optionsforrepositoriesusingoptions_1">3.8.6. optionsForRepositories</a></li>
+<li><a href="#_listrepositoriesusingget">3.9.1. listRepositories</a></li>
+<li><a href="#_headforrepositoriesusinghead">3.9.2. headForRepositories</a></li>
+<li><a href="#_optionsforrepositoriesusingoptions">3.9.3. optionsForRepositories</a></li>
+<li><a href="#_listrepositoriesusingget_1">3.9.4. listRepositories</a></li>
+<li><a href="#_headforrepositoriesusinghead_1">3.9.5. headForRepositories</a></li>
+<li><a href="#_optionsforrepositoriesusingoptions_1">3.9.6. optionsForRepositories</a></li>
 </ul>
 </li>
 </ul>
@@ -677,19 +677,22 @@ table.CodeRay td.code>pre{padding:0}
 <div class="ulist">
 <ul>
 <li>
-<p>Entity Metadata Services : Repository Schema Controller</p>
+<p>Apps Entity : Repository Entity Controller</p>
+</li>
+<li>
+<p>Entity Metadata Services : Alps Controller</p>
 </li>
 <li>
 <p>Role Entity : Repository Entity Controller</p>
 </li>
 <li>
-<p>Socket : Operations with Models through Rest</p>
+<p>Role Related Services : Operations with Role Models through Rest</p>
+</li>
+<li>
+<p>Socket Related Services : Operations with Models through Rest</p>
 </li>
 <li>
 <p>User Entity : Repository Entity Controller</p>
-</li>
-<li>
-<p>User Entity Search : User Repository</p>
 </li>
 <li>
 <p>User Related Services : Operations with User Models through Rest</p>
@@ -736,31 +739,7 @@ table.CodeRay td.code>pre{padding:0}
 </table>
 </div>
 <div class="sect2">
-<h3 id="_b07c66a481263dede2349ac223d023af"><a class="anchor" href="#_b07c66a481263dede2349ac223d023af"></a><a class="link" href="#_b07c66a481263dede2349ac223d023af">2.2. Collection«Link»</a></h3>
-<div class="paragraph">
-<p><em>Type</em> : object</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_4b229d17859bcc4c429e300623e2304f"><a class="anchor" href="#_4b229d17859bcc4c429e300623e2304f"></a><a class="link" href="#_4b229d17859bcc4c429e300623e2304f">2.3. Collection«Role»</a></h3>
-<div class="paragraph">
-<p><em>Type</em> : object</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_e411467c6995420fb08272b4cf992926"><a class="anchor" href="#_e411467c6995420fb08272b4cf992926"></a><a class="link" href="#_e411467c6995420fb08272b4cf992926">2.4. Collection«User»</a></h3>
-<div class="paragraph">
-<p><em>Type</em> : object</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_f720601e8234a7d1eb8ee31c6bbcce35"><a class="anchor" href="#_f720601e8234a7d1eb8ee31c6bbcce35"></a><a class="link" href="#_f720601e8234a7d1eb8ee31c6bbcce35">2.5. Collection«string»</a></h3>
-<div class="paragraph">
-<p><em>Type</em> : object</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_httpentity"><a class="anchor" href="#_httpentity"></a><a class="link" href="#_httpentity">2.6. HttpEntity</a></h3>
+<h3 id="_apps"><a class="anchor" href="#_apps"></a><a class="link" href="#_apps">2.2. Apps</a></h3>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 42.8571%;">
@@ -774,15 +753,70 @@ table.CodeRay td.code>pre{padding:0}
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>body</strong><br>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>appKey</strong><br>
 <em>optional</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">object</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">string</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>createdDate</strong><br>
+<em>optional</em></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="#_timestamp">Timestamp</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>description</strong><br>
+<em>optional</em></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">string</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>id</strong><br>
+<em>optional</em></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">string</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>name</strong><br>
+<em>optional</em></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">string</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>updatedDate</strong><br>
+<em>optional</em></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="#_timestamp">Timestamp</a></p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_item"><a class="anchor" href="#_item"></a><a class="link" href="#_item">2.7. Item</a></h3>
+<h3 id="_d6a4847683c84b693242956703126ad1"><a class="anchor" href="#_d6a4847683c84b693242956703126ad1"></a><a class="link" href="#_d6a4847683c84b693242956703126ad1">2.3. Collection«Apps»</a></h3>
+<div class="paragraph">
+<p><em>Type</em> : object</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_b07c66a481263dede2349ac223d023af"><a class="anchor" href="#_b07c66a481263dede2349ac223d023af"></a><a class="link" href="#_b07c66a481263dede2349ac223d023af">2.4. Collection«Link»</a></h3>
+<div class="paragraph">
+<p><em>Type</em> : object</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4b229d17859bcc4c429e300623e2304f"><a class="anchor" href="#_4b229d17859bcc4c429e300623e2304f"></a><a class="link" href="#_4b229d17859bcc4c429e300623e2304f">2.5. Collection«Role»</a></h3>
+<div class="paragraph">
+<p><em>Type</em> : object</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_e411467c6995420fb08272b4cf992926"><a class="anchor" href="#_e411467c6995420fb08272b4cf992926"></a><a class="link" href="#_e411467c6995420fb08272b4cf992926">2.6. Collection«User»</a></h3>
+<div class="paragraph">
+<p><em>Type</em> : object</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_f720601e8234a7d1eb8ee31c6bbcce35"><a class="anchor" href="#_f720601e8234a7d1eb8ee31c6bbcce35"></a><a class="link" href="#_f720601e8234a7d1eb8ee31c6bbcce35">2.7. Collection«string»</a></h3>
+<div class="paragraph">
+<p><em>Type</em> : object</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_item"><a class="anchor" href="#_item"></a><a class="link" href="#_item">2.8. Item</a></h3>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 42.8571%;">
@@ -814,7 +848,7 @@ table.CodeRay td.code>pre{padding:0}
 </table>
 </div>
 <div class="sect2">
-<h3 id="_jsonschema"><a class="anchor" href="#_jsonschema"></a><a class="link" href="#_jsonschema">2.8. JsonSchema</a></h3>
+<h3 id="_jsonschema"><a class="anchor" href="#_jsonschema"></a><a class="link" href="#_jsonschema">2.9. JsonSchema</a></h3>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 42.8571%;">
@@ -866,7 +900,7 @@ table.CodeRay td.code>pre{padding:0}
 </table>
 </div>
 <div class="sect2">
-<h3 id="_link"><a class="anchor" href="#_link"></a><a class="link" href="#_link">2.9. Link</a></h3>
+<h3 id="_link"><a class="anchor" href="#_link"></a><a class="link" href="#_link">2.10. Link</a></h3>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 42.8571%;">
@@ -898,71 +932,7 @@ table.CodeRay td.code>pre{padding:0}
 </table>
 </div>
 <div class="sect2">
-<h3 id="_message"><a class="anchor" href="#_message"></a><a class="link" href="#_message">2.10. Message</a></h3>
-<table class="tableblock frame-all grid-all spread">
-<colgroup>
-<col style="width: 42.8571%;">
-<col style="width: 57.1429%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-middle">Name</th>
-<th class="tableblock halign-left valign-middle">Schema</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>from</strong><br>
-<em>optional</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">string</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>text</strong><br>
-<em>optional</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">string</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect2">
-<h3 id="_messageformat"><a class="anchor" href="#_messageformat"></a><a class="link" href="#_messageformat">2.11. MessageFormat</a></h3>
-<table class="tableblock frame-all grid-all spread">
-<colgroup>
-<col style="width: 42.8571%;">
-<col style="width: 57.1429%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-middle">Name</th>
-<th class="tableblock halign-left valign-middle">Schema</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>from</strong><br>
-<em>optional</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="#_user">User</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>message</strong><br>
-<em>optional</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="#_message">Message</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>timestamp</strong><br>
-<em>optional</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="#_timestamp">Timestamp</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>to</strong><br>
-<em>optional</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="#_user">User</a></p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect2">
-<h3 id="_repositorylinksresource"><a class="anchor" href="#_repositorylinksresource"></a><a class="link" href="#_repositorylinksresource">2.12. RepositoryLinksResource</a></h3>
+<h3 id="_repositorylinksresource"><a class="anchor" href="#_repositorylinksresource"></a><a class="link" href="#_repositorylinksresource">2.11. RepositoryLinksResource</a></h3>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 42.8571%;">
@@ -984,7 +954,7 @@ table.CodeRay td.code>pre{padding:0}
 </table>
 </div>
 <div class="sect2">
-<h3 id="_repositorysearchesresource"><a class="anchor" href="#_repositorysearchesresource"></a><a class="link" href="#_repositorysearchesresource">2.13. RepositorySearchesResource</a></h3>
+<h3 id="_resourcesupport"><a class="anchor" href="#_resourcesupport"></a><a class="link" href="#_resourcesupport">2.12. ResourceSupport</a></h3>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 42.8571%;">
@@ -1006,7 +976,7 @@ table.CodeRay td.code>pre{padding:0}
 </table>
 </div>
 <div class="sect2">
-<h3 id="_resourcesupport"><a class="anchor" href="#_resourcesupport"></a><a class="link" href="#_resourcesupport">2.14. ResourceSupport</a></h3>
+<h3 id="_48aa17fd90b9eb7d21da9958dc56b111"><a class="anchor" href="#_48aa17fd90b9eb7d21da9958dc56b111"></a><a class="link" href="#_48aa17fd90b9eb7d21da9958dc56b111">2.13. Resources«Apps»</a></h3>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 42.8571%;">
@@ -1020,6 +990,11 @@ table.CodeRay td.code>pre{padding:0}
 </thead>
 <tbody>
 <tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>content</strong><br>
+<em>optional</em></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="#_d6a4847683c84b693242956703126ad1">Collection«Apps»</a></p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>links</strong><br>
 <em>optional</em></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">&lt; <a href="#_link">Link</a> &gt; array</p></td>
@@ -1028,7 +1003,7 @@ table.CodeRay td.code>pre{padding:0}
 </table>
 </div>
 <div class="sect2">
-<h3 id="_5956193908f022f308de9cdb36ac9a8b"><a class="anchor" href="#_5956193908f022f308de9cdb36ac9a8b"></a><a class="link" href="#_5956193908f022f308de9cdb36ac9a8b">2.15. Resources«Link»</a></h3>
+<h3 id="_5956193908f022f308de9cdb36ac9a8b"><a class="anchor" href="#_5956193908f022f308de9cdb36ac9a8b"></a><a class="link" href="#_5956193908f022f308de9cdb36ac9a8b">2.14. Resources«Link»</a></h3>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 42.8571%;">
@@ -1055,7 +1030,7 @@ table.CodeRay td.code>pre{padding:0}
 </table>
 </div>
 <div class="sect2">
-<h3 id="_072aa28c1b3060cb86fefb0e6fcf9406"><a class="anchor" href="#_072aa28c1b3060cb86fefb0e6fcf9406"></a><a class="link" href="#_072aa28c1b3060cb86fefb0e6fcf9406">2.16. Resources«Role»</a></h3>
+<h3 id="_072aa28c1b3060cb86fefb0e6fcf9406"><a class="anchor" href="#_072aa28c1b3060cb86fefb0e6fcf9406"></a><a class="link" href="#_072aa28c1b3060cb86fefb0e6fcf9406">2.15. Resources«Role»</a></h3>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 42.8571%;">
@@ -1082,7 +1057,7 @@ table.CodeRay td.code>pre{padding:0}
 </table>
 </div>
 <div class="sect2">
-<h3 id="_95c27685fb3786310947ea2de25ecc64"><a class="anchor" href="#_95c27685fb3786310947ea2de25ecc64"></a><a class="link" href="#_95c27685fb3786310947ea2de25ecc64">2.17. Resources«User»</a></h3>
+<h3 id="_95c27685fb3786310947ea2de25ecc64"><a class="anchor" href="#_95c27685fb3786310947ea2de25ecc64"></a><a class="link" href="#_95c27685fb3786310947ea2de25ecc64">2.16. Resources«User»</a></h3>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 42.8571%;">
@@ -1104,6 +1079,58 @@ table.CodeRay td.code>pre{padding:0}
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>links</strong><br>
 <em>optional</em></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">&lt; <a href="#_link">Link</a> &gt; array</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_d41ab31641c81a9cbba20b0bc9de934d"><a class="anchor" href="#_d41ab31641c81a9cbba20b0bc9de934d"></a><a class="link" href="#_d41ab31641c81a9cbba20b0bc9de934d">2.17. Resource«Apps»</a></h3>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 42.8571%;">
+<col style="width: 57.1429%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>appKey</strong><br>
+<em>optional</em></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">string</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>createdDate</strong><br>
+<em>optional</em></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="#_timestamp">Timestamp</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>description</strong><br>
+<em>optional</em></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">string</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>id</strong><br>
+<em>optional</em></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">string</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>links</strong><br>
+<em>optional</em></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">&lt; <a href="#_link">Link</a> &gt; array</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>name</strong><br>
+<em>optional</em></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">string</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>updatedDate</strong><br>
+<em>optional</em></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="#_timestamp">Timestamp</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -1198,34 +1225,7 @@ table.CodeRay td.code>pre{padding:0}
 </table>
 </div>
 <div class="sect2">
-<h3 id="_responsemodel"><a class="anchor" href="#_responsemodel"></a><a class="link" href="#_responsemodel">2.20. ResponseModel</a></h3>
-<table class="tableblock frame-all grid-all spread">
-<colgroup>
-<col style="width: 42.8571%;">
-<col style="width: 57.1429%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-middle">Name</th>
-<th class="tableblock halign-left valign-middle">Schema</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>message</strong><br>
-<em>optional</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">string</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>status</strong><br>
-<em>optional</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">integer (int32)</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect2">
-<h3 id="_role"><a class="anchor" href="#_role"></a><a class="link" href="#_role">2.21. Role</a></h3>
+<h3 id="_role"><a class="anchor" href="#_role"></a><a class="link" href="#_role">2.20. Role</a></h3>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 42.8571%;">
@@ -1252,7 +1252,7 @@ table.CodeRay td.code>pre{padding:0}
 </table>
 </div>
 <div class="sect2">
-<h3 id="_timestamp"><a class="anchor" href="#_timestamp"></a><a class="link" href="#_timestamp">2.22. Timestamp</a></h3>
+<h3 id="_timestamp"><a class="anchor" href="#_timestamp"></a><a class="link" href="#_timestamp">2.21. Timestamp</a></h3>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 42.8571%;">
@@ -1319,7 +1319,7 @@ table.CodeRay td.code>pre{padding:0}
 </table>
 </div>
 <div class="sect2">
-<h3 id="_user"><a class="anchor" href="#_user"></a><a class="link" href="#_user">2.23. User</a></h3>
+<h3 id="_user"><a class="anchor" href="#_user"></a><a class="link" href="#_user">2.22. User</a></h3>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 42.8571%;">
@@ -1376,12 +1376,18 @@ table.CodeRay td.code>pre{padding:0}
 <h2 id="_paths"><a class="anchor" href="#_paths"></a><a class="link" href="#_paths">3. Resources</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_entity_metadata_services_resource"><a class="anchor" href="#_entity_metadata_services_resource"></a><a class="link" href="#_entity_metadata_services_resource">3.1. Entity Metadata Services</a></h3>
+<h3 id="_apps_entity_resource"><a class="anchor" href="#_apps_entity_resource"></a><a class="link" href="#_apps_entity_resource">3.1. Apps Entity</a></h3>
 <div class="paragraph">
-<p>Repository Schema Controller</p>
+<p>Repository Entity Controller</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_entity_metadata_services_resource"><a class="anchor" href="#_entity_metadata_services_resource"></a><a class="link" href="#_entity_metadata_services_resource">3.2. Entity Metadata Services</a></h3>
+<div class="paragraph">
+<p>Alps Controller</p>
 </div>
 <div class="sect3">
-<h4 id="_schemausingget_1"><a class="anchor" href="#_schemausingget_1"></a><a class="link" href="#_schemausingget_1">3.1.1. schema</a></h4>
+<h4 id="_schemausingget_1"><a class="anchor" href="#_schemausingget_1"></a><a class="link" href="#_schemausingget_1">3.2.1. schema</a></h4>
 <div class="literalblock">
 <div class="content">
 <pre>GET /api/rest-uri/profile/roles</pre>
@@ -1454,7 +1460,7 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect3">
-<h4 id="_alpsoptionsusingoptions_1"><a class="anchor" href="#_alpsoptionsusingoptions_1"></a><a class="link" href="#_alpsoptionsusingoptions_1">3.1.2. alpsOptions</a></h4>
+<h4 id="_alpsoptionsusingoptions_2"><a class="anchor" href="#_alpsoptionsusingoptions_2"></a><a class="link" href="#_alpsoptionsusingoptions_2">3.2.2. alpsOptions</a></h4>
 <div class="literalblock">
 <div class="content">
 <pre>OPTIONS /api/rest-uri/profile/roles</pre>
@@ -1521,7 +1527,7 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect3">
-<h4 id="_schemausingget"><a class="anchor" href="#_schemausingget"></a><a class="link" href="#_schemausingget">3.1.3. schema</a></h4>
+<h4 id="_schemausingget"><a class="anchor" href="#_schemausingget"></a><a class="link" href="#_schemausingget">3.2.3. schema</a></h4>
 <div class="literalblock">
 <div class="content">
 <pre>GET /api/rest-uri/profile/users</pre>
@@ -1594,7 +1600,7 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect3">
-<h4 id="_alpsoptionsusingoptions"><a class="anchor" href="#_alpsoptionsusingoptions"></a><a class="link" href="#_alpsoptionsusingoptions">3.1.4. alpsOptions</a></h4>
+<h4 id="_alpsoptionsusingoptions"><a class="anchor" href="#_alpsoptionsusingoptions"></a><a class="link" href="#_alpsoptionsusingoptions">3.2.4. alpsOptions</a></h4>
 <div class="literalblock">
 <div class="content">
 <pre>OPTIONS /api/rest-uri/profile/users</pre>
@@ -1662,12 +1668,12 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect2">
-<h3 id="_role_entity_resource"><a class="anchor" href="#_role_entity_resource"></a><a class="link" href="#_role_entity_resource">3.2. Role Entity</a></h3>
+<h3 id="_role_entity_resource"><a class="anchor" href="#_role_entity_resource"></a><a class="link" href="#_role_entity_resource">3.3. Role Entity</a></h3>
 <div class="paragraph">
 <p>Repository Entity Controller</p>
 </div>
 <div class="sect3">
-<h4 id="_postcollectionresourceusingpost"><a class="anchor" href="#_postcollectionresourceusingpost"></a><a class="link" href="#_postcollectionresourceusingpost">3.2.1. postCollectionResource</a></h4>
+<h4 id="_postcollectionresourceusingpost_1"><a class="anchor" href="#_postcollectionresourceusingpost_1"></a><a class="link" href="#_postcollectionresourceusingpost_1">3.3.1. postCollectionResource</a></h4>
 <div class="literalblock">
 <div class="content">
 <pre>POST /api/rest-uri/roles</pre>
@@ -1770,7 +1776,7 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect3">
-<h4 id="_getcollectionresourceusingget"><a class="anchor" href="#_getcollectionresourceusingget"></a><a class="link" href="#_getcollectionresourceusingget">3.2.2. getCollectionResource</a></h4>
+<h4 id="_getcollectionresourcecompactusingget_1"><a class="anchor" href="#_getcollectionresourcecompactusingget_1"></a><a class="link" href="#_getcollectionresourcecompactusingget_1">3.3.2. getCollectionResourceCompact</a></h4>
 <div class="literalblock">
 <div class="content">
 <pre>GET /api/rest-uri/roles</pre>
@@ -1795,7 +1801,7 @@ table.CodeRay td.code>pre{padding:0}
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>200</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">OK</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="#_072aa28c1b3060cb86fefb0e6fcf9406">Resources«Role»</a></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="#_5956193908f022f308de9cdb36ac9a8b">Resources«Link»</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>401</strong></p></td>
@@ -1830,17 +1836,17 @@ table.CodeRay td.code>pre{padding:0}
 <div class="ulist">
 <ul>
 <li>
-<p><code>application/json</code></p>
+<p><code>text/uri-list</code></p>
 </li>
 <li>
-<p><code>application/hal+json</code></p>
+<p><code>application/x-spring-data-compact+json</code></p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_headcollectionresourceusinghead"><a class="anchor" href="#_headcollectionresourceusinghead"></a><a class="link" href="#_headcollectionresourceusinghead">3.2.3. headCollectionResource</a></h4>
+<h4 id="_headcollectionresourceusinghead_1"><a class="anchor" href="#_headcollectionresourceusinghead_1"></a><a class="link" href="#_headcollectionresourceusinghead_1">3.3.3. headCollectionResource</a></h4>
 <div class="literalblock">
 <div class="content">
 <pre>HEAD /api/rest-uri/roles</pre>
@@ -1910,7 +1916,7 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect3">
-<h4 id="_optionsforcollectionresourceusingoptions"><a class="anchor" href="#_optionsforcollectionresourceusingoptions"></a><a class="link" href="#_optionsforcollectionresourceusingoptions">3.2.4. optionsForCollectionResource</a></h4>
+<h4 id="_optionsforcollectionresourceusingoptions_1"><a class="anchor" href="#_optionsforcollectionresourceusingoptions_1"></a><a class="link" href="#_optionsforcollectionresourceusingoptions_1">3.3.4. optionsForCollectionResource</a></h4>
 <div class="literalblock">
 <div class="content">
 <pre>OPTIONS /api/rest-uri/roles</pre>
@@ -1980,7 +1986,7 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect3">
-<h4 id="_getitemresourceusingget"><a class="anchor" href="#_getitemresourceusingget"></a><a class="link" href="#_getitemresourceusingget">3.2.5. getItemResource</a></h4>
+<h4 id="_getitemresourceusingget_1"><a class="anchor" href="#_getitemresourceusingget_1"></a><a class="link" href="#_getitemresourceusingget_1">3.3.5. getItemResource</a></h4>
 <div class="literalblock">
 <div class="content">
 <pre>GET /api/rest-uri/roles/{id}</pre>
@@ -2078,7 +2084,7 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect3">
-<h4 id="_putitemresourceusingput"><a class="anchor" href="#_putitemresourceusingput"></a><a class="link" href="#_putitemresourceusingput">3.2.6. putItemResource</a></h4>
+<h4 id="_putitemresourceusingput_1"><a class="anchor" href="#_putitemresourceusingput_1"></a><a class="link" href="#_putitemresourceusingput_1">3.3.6. putItemResource</a></h4>
 <div class="literalblock">
 <div class="content">
 <pre>PUT /api/rest-uri/roles/{id}</pre>
@@ -2188,7 +2194,7 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect3">
-<h4 id="_deleteitemresourceusingdelete"><a class="anchor" href="#_deleteitemresourceusingdelete"></a><a class="link" href="#_deleteitemresourceusingdelete">3.2.7. deleteItemResource</a></h4>
+<h4 id="_deleteitemresourceusingdelete_1"><a class="anchor" href="#_deleteitemresourceusingdelete_1"></a><a class="link" href="#_deleteitemresourceusingdelete_1">3.3.7. deleteItemResource</a></h4>
 <div class="literalblock">
 <div class="content">
 <pre>DELETE /api/rest-uri/roles/{id}</pre>
@@ -2286,7 +2292,7 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect3">
-<h4 id="_patchitemresourceusingpatch"><a class="anchor" href="#_patchitemresourceusingpatch"></a><a class="link" href="#_patchitemresourceusingpatch">3.2.8. patchItemResource</a></h4>
+<h4 id="_patchitemresourceusingpatch_1"><a class="anchor" href="#_patchitemresourceusingpatch_1"></a><a class="link" href="#_patchitemresourceusingpatch_1">3.3.8. patchItemResource</a></h4>
 <div class="literalblock">
 <div class="content">
 <pre>PATCH /api/rest-uri/roles/{id}</pre>
@@ -2391,7 +2397,7 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect3">
-<h4 id="_headforitemresourceusinghead"><a class="anchor" href="#_headforitemresourceusinghead"></a><a class="link" href="#_headforitemresourceusinghead">3.2.9. headForItemResource</a></h4>
+<h4 id="_headforitemresourceusinghead_1"><a class="anchor" href="#_headforitemresourceusinghead_1"></a><a class="link" href="#_headforitemresourceusinghead_1">3.3.9. headForItemResource</a></h4>
 <div class="literalblock">
 <div class="content">
 <pre>HEAD /api/rest-uri/roles/{id}</pre>
@@ -2489,7 +2495,7 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect3">
-<h4 id="_optionsforitemresourceusingoptions"><a class="anchor" href="#_optionsforitemresourceusingoptions"></a><a class="link" href="#_optionsforitemresourceusingoptions">3.2.10. optionsForItemResource</a></h4>
+<h4 id="_optionsforitemresourceusingoptions_1"><a class="anchor" href="#_optionsforitemresourceusingoptions_1"></a><a class="link" href="#_optionsforitemresourceusingoptions_1">3.3.10. optionsForItemResource</a></h4>
 <div class="literalblock">
 <div class="content">
 <pre>OPTIONS /api/rest-uri/roles/{id}</pre>
@@ -2560,50 +2566,22 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect2">
-<h3 id="_socket_resource"><a class="anchor" href="#_socket_resource"></a><a class="link" href="#_socket_resource">3.3. Socket</a></h3>
+<h3 id="_role_related_services_resource"><a class="anchor" href="#_role_related_services_resource"></a><a class="link" href="#_role_related_services_resource">3.4. Role Related Services</a></h3>
 <div class="paragraph">
-<p>Operations with Models through Rest</p>
+<p>Operations with Role Models through Rest</p>
 </div>
 <div class="sect3">
-<h4 id="_pingsocketusingpost"><a class="anchor" href="#_pingsocketusingpost"></a><a class="link" href="#_pingsocketusingpost">3.3.1. Ping the Websocket User</a></h4>
+<h4 id="_getallroleusingget"><a class="anchor" href="#_getallroleusingget"></a><a class="link" href="#_getallroleusingget">3.4.1. List All The Roles</a></h4>
 <div class="literalblock">
 <div class="content">
-<pre>POST /api/stomp/ping</pre>
+<pre>GET /api/role/all</pre>
 </div>
 </div>
 <div class="sect4">
 <h5 id="description"><a class="anchor" href="#description"></a><a class="link" href="#description">Description</a></h5>
 <div class="paragraph">
-<p>Send Simple Message to All the Connected User</p>
+<p>It List All The Roles</p>
 </div>
-</div>
-<div class="sect4">
-<h5 id="parameters-7"><a class="anchor" href="#parameters-7"></a><a class="link" href="#parameters-7">Parameters</a></h5>
-<table class="tableblock frame-all grid-all spread">
-<colgroup>
-<col style="width: 11.1111%;">
-<col style="width: 16.6666%;">
-<col style="width: 50%;">
-<col style="width: 22.2223%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-middle">Type</th>
-<th class="tableblock halign-left valign-middle">Name</th>
-<th class="tableblock halign-left valign-middle">Description</th>
-<th class="tableblock halign-left valign-middle">Schema</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Body</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>messageToSend</strong><br>
-<em>required</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">messageToSend</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">string</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="sect4">
 <h5 id="responses-15"><a class="anchor" href="#responses-15"></a><a class="link" href="#responses-15">Responses</a></h5>
@@ -2624,12 +2602,7 @@ table.CodeRay td.code>pre{padding:0}
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>200</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">OK</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">string</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>201</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Created</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">object</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>401</strong></p></td>
@@ -2671,34 +2644,20 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect3">
-<h4 id="_sendtouserusingpost"><a class="anchor" href="#_sendtouserusingpost"></a><a class="link" href="#_sendtouserusingpost">3.3.2. Ping the MQTT User</a></h4>
+<h4 id="_getuserrolesusingget"><a class="anchor" href="#_getuserrolesusingget"></a><a class="link" href="#_getuserrolesusingget">3.4.2. List All The Users associated to that role</a></h4>
 <div class="literalblock">
 <div class="content">
-<pre>POST /api/stomp/ping/{userid}</pre>
+<pre>GET /api/role/user/{roleid}</pre>
 </div>
-</div>
-<div class="admonitionblock caution">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-caution" title="Caution"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>operation.deprecated</p>
-</div>
-</td>
-</tr>
-</table>
 </div>
 <div class="sect4">
 <h5 id="description-2"><a class="anchor" href="#description-2"></a><a class="link" href="#description-2">Description</a></h5>
 <div class="paragraph">
-<p>Sends Simple Messsage To topic of mqtt User : @This API is DEPRECATED instead Use /api/user/message/{username} Call</p>
+<p>It List All The User associated to that role</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="parameters-8"><a class="anchor" href="#parameters-8"></a><a class="link" href="#parameters-8">Parameters</a></h5>
+<h5 id="parameters-7"><a class="anchor" href="#parameters-7"></a><a class="link" href="#parameters-7">Parameters</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 11.1111%;">
@@ -2717,16 +2676,9 @@ table.CodeRay td.code>pre{padding:0}
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Path</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>userid</strong><br>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>roleid</strong><br>
 <em>required</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">userid</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">string</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Body</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>messageToSend</strong><br>
-<em>required</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">messageToSend</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">roleid</p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">string</p></td>
 </tr>
 </tbody>
@@ -2751,12 +2703,7 @@ table.CodeRay td.code>pre{padding:0}
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>200</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">OK</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="#_responsemodel">ResponseModel</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>201</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Created</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">object</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>401</strong></p></td>
@@ -2799,19 +2746,258 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect2">
-<h3 id="_user_entity_resource"><a class="anchor" href="#_user_entity_resource"></a><a class="link" href="#_user_entity_resource">3.4. User Entity</a></h3>
+<h3 id="_socket_related_services_resource"><a class="anchor" href="#_socket_related_services_resource"></a><a class="link" href="#_socket_related_services_resource">3.5. Socket Related Services</a></h3>
+<div class="paragraph">
+<p>Operations with Models through Rest</p>
+</div>
+<div class="sect3">
+<h4 id="_pingsocketusingpost"><a class="anchor" href="#_pingsocketusingpost"></a><a class="link" href="#_pingsocketusingpost">3.5.1. Ping the Websocket User</a></h4>
+<div class="literalblock">
+<div class="content">
+<pre>POST /api/stomp/ping</pre>
+</div>
+</div>
+<div class="sect4">
+<h5 id="description-3"><a class="anchor" href="#description-3"></a><a class="link" href="#description-3">Description</a></h5>
+<div class="paragraph">
+<p>Send Simple Message to All the Connected User</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="parameters-8"><a class="anchor" href="#parameters-8"></a><a class="link" href="#parameters-8">Parameters</a></h5>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 11.1111%;">
+<col style="width: 16.6666%;">
+<col style="width: 50%;">
+<col style="width: 22.2223%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Type</th>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Body</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>messageToSend</strong><br>
+<em>required</em></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">messageToSend</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">string</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="responses-17"><a class="anchor" href="#responses-17"></a><a class="link" href="#responses-17">Responses</a></h5>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 10%;">
+<col style="width: 70%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">HTTP Code</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>200</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">OK</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">string</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>201</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Created</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>401</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Unauthorized</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>403</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Forbidden</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>404</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Not Found</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="consumes-17"><a class="anchor" href="#consumes-17"></a><a class="link" href="#consumes-17">Consumes</a></h5>
+<div class="ulist">
+<ul>
+<li>
+<p><code>application/json</code></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="produces-17"><a class="anchor" href="#produces-17"></a><a class="link" href="#produces-17">Produces</a></h5>
+<div class="ulist">
+<ul>
+<li>
+<p><code><strong>/</strong></code></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_sendtouserusingpost"><a class="anchor" href="#_sendtouserusingpost"></a><a class="link" href="#_sendtouserusingpost">3.5.2. Ping the MQTT User</a></h4>
+<div class="literalblock">
+<div class="content">
+<pre>POST /api/stomp/ping/{userid}</pre>
+</div>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>operation.deprecated</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect4">
+<h5 id="description-4"><a class="anchor" href="#description-4"></a><a class="link" href="#description-4">Description</a></h5>
+<div class="paragraph">
+<p>Sends Simple Messsage To topic of mqtt User : @This API is DEPRECATED instead Use /api/user/message/{username} Call</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="parameters-9"><a class="anchor" href="#parameters-9"></a><a class="link" href="#parameters-9">Parameters</a></h5>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 11.1111%;">
+<col style="width: 16.6666%;">
+<col style="width: 50%;">
+<col style="width: 22.2223%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Type</th>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Path</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>userid</strong><br>
+<em>required</em></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">userid</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">string</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Body</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>messageToSend</strong><br>
+<em>required</em></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">messageToSend</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">string</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="responses-18"><a class="anchor" href="#responses-18"></a><a class="link" href="#responses-18">Responses</a></h5>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 10%;">
+<col style="width: 70%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">HTTP Code</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>200</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">OK</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">object</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>201</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Created</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>401</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Unauthorized</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>403</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Forbidden</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>404</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Not Found</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="consumes-18"><a class="anchor" href="#consumes-18"></a><a class="link" href="#consumes-18">Consumes</a></h5>
+<div class="ulist">
+<ul>
+<li>
+<p><code>application/json</code></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="produces-18"><a class="anchor" href="#produces-18"></a><a class="link" href="#produces-18">Produces</a></h5>
+<div class="ulist">
+<ul>
+<li>
+<p><code><strong>/</strong></code></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_user_entity_resource"><a class="anchor" href="#_user_entity_resource"></a><a class="link" href="#_user_entity_resource">3.6. User Entity</a></h3>
 <div class="paragraph">
 <p>Repository Entity Controller</p>
 </div>
 <div class="sect3">
-<h4 id="_postcollectionresourceusingpost_1"><a class="anchor" href="#_postcollectionresourceusingpost_1"></a><a class="link" href="#_postcollectionresourceusingpost_1">3.4.1. postCollectionResource</a></h4>
+<h4 id="_postcollectionresourceusingpost_2"><a class="anchor" href="#_postcollectionresourceusingpost_2"></a><a class="link" href="#_postcollectionresourceusingpost_2">3.6.1. postCollectionResource</a></h4>
 <div class="literalblock">
 <div class="content">
 <pre>POST /api/rest-uri/users</pre>
 </div>
 </div>
 <div class="sect4">
-<h5 id="parameters-9"><a class="anchor" href="#parameters-9"></a><a class="link" href="#parameters-9">Parameters</a></h5>
+<h5 id="parameters-10"><a class="anchor" href="#parameters-10"></a><a class="link" href="#parameters-10">Parameters</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 11.1111%;">
@@ -2839,7 +3025,7 @@ table.CodeRay td.code>pre{padding:0}
 </table>
 </div>
 <div class="sect4">
-<h5 id="responses-17"><a class="anchor" href="#responses-17"></a><a class="link" href="#responses-17">Responses</a></h5>
+<h5 id="responses-19"><a class="anchor" href="#responses-19"></a><a class="link" href="#responses-19">Responses</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 10%;">
@@ -2883,146 +3069,6 @@ table.CodeRay td.code>pre{padding:0}
 </table>
 </div>
 <div class="sect4">
-<h5 id="consumes-17"><a class="anchor" href="#consumes-17"></a><a class="link" href="#consumes-17">Consumes</a></h5>
-<div class="ulist">
-<ul>
-<li>
-<p><code>application/json</code></p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect4">
-<h5 id="produces-17"><a class="anchor" href="#produces-17"></a><a class="link" href="#produces-17">Produces</a></h5>
-<div class="ulist">
-<ul>
-<li>
-<p><code>application/json</code></p>
-</li>
-<li>
-<p><code>application/hal+json</code></p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_getcollectionresourceusingget_1"><a class="anchor" href="#_getcollectionresourceusingget_1"></a><a class="link" href="#_getcollectionresourceusingget_1">3.4.2. getCollectionResource</a></h4>
-<div class="literalblock">
-<div class="content">
-<pre>GET /api/rest-uri/users</pre>
-</div>
-</div>
-<div class="sect4">
-<h5 id="responses-18"><a class="anchor" href="#responses-18"></a><a class="link" href="#responses-18">Responses</a></h5>
-<table class="tableblock frame-all grid-all spread">
-<colgroup>
-<col style="width: 10%;">
-<col style="width: 70%;">
-<col style="width: 20%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-middle">HTTP Code</th>
-<th class="tableblock halign-left valign-middle">Description</th>
-<th class="tableblock halign-left valign-middle">Schema</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>200</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">OK</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="#_95c27685fb3786310947ea2de25ecc64">Resources«User»</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>401</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Unauthorized</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>403</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Forbidden</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>404</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Not Found</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect4">
-<h5 id="consumes-18"><a class="anchor" href="#consumes-18"></a><a class="link" href="#consumes-18">Consumes</a></h5>
-<div class="ulist">
-<ul>
-<li>
-<p><code>application/json</code></p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect4">
-<h5 id="produces-18"><a class="anchor" href="#produces-18"></a><a class="link" href="#produces-18">Produces</a></h5>
-<div class="ulist">
-<ul>
-<li>
-<p><code>application/json</code></p>
-</li>
-<li>
-<p><code>application/hal+json</code></p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_headcollectionresourceusinghead_1"><a class="anchor" href="#_headcollectionresourceusinghead_1"></a><a class="link" href="#_headcollectionresourceusinghead_1">3.4.3. headCollectionResource</a></h4>
-<div class="literalblock">
-<div class="content">
-<pre>HEAD /api/rest-uri/users</pre>
-</div>
-</div>
-<div class="sect4">
-<h5 id="responses-19"><a class="anchor" href="#responses-19"></a><a class="link" href="#responses-19">Responses</a></h5>
-<table class="tableblock frame-all grid-all spread">
-<colgroup>
-<col style="width: 10%;">
-<col style="width: 70%;">
-<col style="width: 20%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-middle">HTTP Code</th>
-<th class="tableblock halign-left valign-middle">Description</th>
-<th class="tableblock halign-left valign-middle">Schema</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>200</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">OK</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>204</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>401</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Unauthorized</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>403</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Forbidden</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect4">
 <h5 id="consumes-19"><a class="anchor" href="#consumes-19"></a><a class="link" href="#consumes-19">Consumes</a></h5>
 <div class="ulist">
 <ul>
@@ -3047,14 +3093,84 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect3">
-<h4 id="_optionsforcollectionresourceusingoptions_1"><a class="anchor" href="#_optionsforcollectionresourceusingoptions_1"></a><a class="link" href="#_optionsforcollectionresourceusingoptions_1">3.4.4. optionsForCollectionResource</a></h4>
+<h4 id="_getcollectionresourcecompactusingget_2"><a class="anchor" href="#_getcollectionresourcecompactusingget_2"></a><a class="link" href="#_getcollectionresourcecompactusingget_2">3.6.2. getCollectionResourceCompact</a></h4>
 <div class="literalblock">
 <div class="content">
-<pre>OPTIONS /api/rest-uri/users</pre>
+<pre>GET /api/rest-uri/users</pre>
 </div>
 </div>
 <div class="sect4">
 <h5 id="responses-20"><a class="anchor" href="#responses-20"></a><a class="link" href="#responses-20">Responses</a></h5>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 10%;">
+<col style="width: 70%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">HTTP Code</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>200</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">OK</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="#_5956193908f022f308de9cdb36ac9a8b">Resources«Link»</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>401</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Unauthorized</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>403</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Forbidden</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>404</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Not Found</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="consumes-20"><a class="anchor" href="#consumes-20"></a><a class="link" href="#consumes-20">Consumes</a></h5>
+<div class="ulist">
+<ul>
+<li>
+<p><code>application/json</code></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="produces-20"><a class="anchor" href="#produces-20"></a><a class="link" href="#produces-20">Produces</a></h5>
+<div class="ulist">
+<ul>
+<li>
+<p><code>text/uri-list</code></p>
+</li>
+<li>
+<p><code>application/x-spring-data-compact+json</code></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_headcollectionresourceusinghead_2"><a class="anchor" href="#_headcollectionresourceusinghead_2"></a><a class="link" href="#_headcollectionresourceusinghead_2">3.6.3. headCollectionResource</a></h4>
+<div class="literalblock">
+<div class="content">
+<pre>HEAD /api/rest-uri/users</pre>
+</div>
+</div>
+<div class="sect4">
+<h5 id="responses-21"><a class="anchor" href="#responses-21"></a><a class="link" href="#responses-21">Responses</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 10%;">
@@ -3087,104 +3203,6 @@ table.CodeRay td.code>pre{padding:0}
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>403</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">Forbidden</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect4">
-<h5 id="consumes-20"><a class="anchor" href="#consumes-20"></a><a class="link" href="#consumes-20">Consumes</a></h5>
-<div class="ulist">
-<ul>
-<li>
-<p><code>application/json</code></p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect4">
-<h5 id="produces-20"><a class="anchor" href="#produces-20"></a><a class="link" href="#produces-20">Produces</a></h5>
-<div class="ulist">
-<ul>
-<li>
-<p><code>application/json</code></p>
-</li>
-<li>
-<p><code>application/hal+json</code></p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_getitemresourceusingget_1"><a class="anchor" href="#_getitemresourceusingget_1"></a><a class="link" href="#_getitemresourceusingget_1">3.4.5. getItemResource</a></h4>
-<div class="literalblock">
-<div class="content">
-<pre>GET /api/rest-uri/users/{id}</pre>
-</div>
-</div>
-<div class="sect4">
-<h5 id="parameters-10"><a class="anchor" href="#parameters-10"></a><a class="link" href="#parameters-10">Parameters</a></h5>
-<table class="tableblock frame-all grid-all spread">
-<colgroup>
-<col style="width: 11.1111%;">
-<col style="width: 16.6666%;">
-<col style="width: 50%;">
-<col style="width: 22.2223%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-middle">Type</th>
-<th class="tableblock halign-left valign-middle">Name</th>
-<th class="tableblock halign-left valign-middle">Description</th>
-<th class="tableblock halign-left valign-middle">Schema</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Path</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>id</strong><br>
-<em>required</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">id</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">string</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect4">
-<h5 id="responses-21"><a class="anchor" href="#responses-21"></a><a class="link" href="#responses-21">Responses</a></h5>
-<table class="tableblock frame-all grid-all spread">
-<colgroup>
-<col style="width: 10%;">
-<col style="width: 70%;">
-<col style="width: 20%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-middle">HTTP Code</th>
-<th class="tableblock halign-left valign-middle">Description</th>
-<th class="tableblock halign-left valign-middle">Schema</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>200</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">OK</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="#_95c27685fb3786310947ea2de25ecc64">Resources«User»</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>401</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Unauthorized</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>403</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Forbidden</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>404</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Not Found</p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
 </tr>
 </tbody>
@@ -3215,46 +3233,11 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect3">
-<h4 id="_putitemresourceusingput_1"><a class="anchor" href="#_putitemresourceusingput_1"></a><a class="link" href="#_putitemresourceusingput_1">3.4.6. putItemResource</a></h4>
+<h4 id="_optionsforcollectionresourceusingoptions_2"><a class="anchor" href="#_optionsforcollectionresourceusingoptions_2"></a><a class="link" href="#_optionsforcollectionresourceusingoptions_2">3.6.4. optionsForCollectionResource</a></h4>
 <div class="literalblock">
 <div class="content">
-<pre>PUT /api/rest-uri/users/{id}</pre>
+<pre>OPTIONS /api/rest-uri/users</pre>
 </div>
-</div>
-<div class="sect4">
-<h5 id="parameters-11"><a class="anchor" href="#parameters-11"></a><a class="link" href="#parameters-11">Parameters</a></h5>
-<table class="tableblock frame-all grid-all spread">
-<colgroup>
-<col style="width: 11.1111%;">
-<col style="width: 16.6666%;">
-<col style="width: 50%;">
-<col style="width: 22.2223%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-middle">Type</th>
-<th class="tableblock halign-left valign-middle">Name</th>
-<th class="tableblock halign-left valign-middle">Description</th>
-<th class="tableblock halign-left valign-middle">Schema</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Path</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>id</strong><br>
-<em>required</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">id</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">string</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Body</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>payload</strong><br>
-<em>required</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">payload</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="#_user">User</a></p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="sect4">
 <h5 id="responses-22"><a class="anchor" href="#responses-22"></a><a class="link" href="#responses-22">Responses</a></h5>
@@ -3275,11 +3258,11 @@ table.CodeRay td.code>pre{padding:0}
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>200</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">OK</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="#_95c27685fb3786310947ea2de25ecc64">Resources«User»</a></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>201</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Created</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>204</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
 </tr>
 <tr>
@@ -3290,11 +3273,6 @@ table.CodeRay td.code>pre{padding:0}
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>403</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">Forbidden</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>404</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Not Found</p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
 </tr>
 </tbody>
@@ -3325,14 +3303,14 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect3">
-<h4 id="_deleteitemresourceusingdelete_1"><a class="anchor" href="#_deleteitemresourceusingdelete_1"></a><a class="link" href="#_deleteitemresourceusingdelete_1">3.4.7. deleteItemResource</a></h4>
+<h4 id="_getitemresourceusingget_2"><a class="anchor" href="#_getitemresourceusingget_2"></a><a class="link" href="#_getitemresourceusingget_2">3.6.5. getItemResource</a></h4>
 <div class="literalblock">
 <div class="content">
-<pre>DELETE /api/rest-uri/users/{id}</pre>
+<pre>GET /api/rest-uri/users/{id}</pre>
 </div>
 </div>
 <div class="sect4">
-<h5 id="parameters-12"><a class="anchor" href="#parameters-12"></a><a class="link" href="#parameters-12">Parameters</a></h5>
+<h5 id="parameters-11"><a class="anchor" href="#parameters-11"></a><a class="link" href="#parameters-11">Parameters</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 11.1111%;">
@@ -3381,11 +3359,6 @@ table.CodeRay td.code>pre{padding:0}
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="#_95c27685fb3786310947ea2de25ecc64">Resources«User»</a></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>204</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>401</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">Unauthorized</p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
@@ -3393,6 +3366,11 @@ table.CodeRay td.code>pre{padding:0}
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>403</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">Forbidden</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>404</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Not Found</p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
 </tr>
 </tbody>
@@ -3423,14 +3401,14 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect3">
-<h4 id="_patchitemresourceusingpatch_1"><a class="anchor" href="#_patchitemresourceusingpatch_1"></a><a class="link" href="#_patchitemresourceusingpatch_1">3.4.8. patchItemResource</a></h4>
+<h4 id="_putitemresourceusingput_2"><a class="anchor" href="#_putitemresourceusingput_2"></a><a class="link" href="#_putitemresourceusingput_2">3.6.6. putItemResource</a></h4>
 <div class="literalblock">
 <div class="content">
-<pre>PATCH /api/rest-uri/users/{id}</pre>
+<pre>PUT /api/rest-uri/users/{id}</pre>
 </div>
 </div>
 <div class="sect4">
-<h5 id="parameters-13"><a class="anchor" href="#parameters-13"></a><a class="link" href="#parameters-13">Parameters</a></h5>
+<h5 id="parameters-12"><a class="anchor" href="#parameters-12"></a><a class="link" href="#parameters-12">Parameters</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 11.1111%;">
@@ -3486,8 +3464,8 @@ table.CodeRay td.code>pre{padding:0}
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="#_95c27685fb3786310947ea2de25ecc64">Resources«User»</a></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>204</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>201</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Created</p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
 </tr>
 <tr>
@@ -3498,6 +3476,11 @@ table.CodeRay td.code>pre{padding:0}
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>403</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">Forbidden</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>404</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Not Found</p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
 </tr>
 </tbody>
@@ -3528,14 +3511,14 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect3">
-<h4 id="_headforitemresourceusinghead_1"><a class="anchor" href="#_headforitemresourceusinghead_1"></a><a class="link" href="#_headforitemresourceusinghead_1">3.4.9. headForItemResource</a></h4>
+<h4 id="_deleteitemresourceusingdelete_2"><a class="anchor" href="#_deleteitemresourceusingdelete_2"></a><a class="link" href="#_deleteitemresourceusingdelete_2">3.6.7. deleteItemResource</a></h4>
 <div class="literalblock">
 <div class="content">
-<pre>HEAD /api/rest-uri/users/{id}</pre>
+<pre>DELETE /api/rest-uri/users/{id}</pre>
 </div>
 </div>
 <div class="sect4">
-<h5 id="parameters-14"><a class="anchor" href="#parameters-14"></a><a class="link" href="#parameters-14">Parameters</a></h5>
+<h5 id="parameters-13"><a class="anchor" href="#parameters-13"></a><a class="link" href="#parameters-13">Parameters</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 11.1111%;">
@@ -3581,7 +3564,7 @@ table.CodeRay td.code>pre{padding:0}
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>200</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">OK</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="#_95c27685fb3786310947ea2de25ecc64">Resources«User»</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>204</strong></p></td>
@@ -3626,11 +3609,46 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect3">
-<h4 id="_optionsforitemresourceusingoptions_1"><a class="anchor" href="#_optionsforitemresourceusingoptions_1"></a><a class="link" href="#_optionsforitemresourceusingoptions_1">3.4.10. optionsForItemResource</a></h4>
+<h4 id="_patchitemresourceusingpatch_2"><a class="anchor" href="#_patchitemresourceusingpatch_2"></a><a class="link" href="#_patchitemresourceusingpatch_2">3.6.8. patchItemResource</a></h4>
 <div class="literalblock">
 <div class="content">
-<pre>OPTIONS /api/rest-uri/users/{id}</pre>
+<pre>PATCH /api/rest-uri/users/{id}</pre>
 </div>
+</div>
+<div class="sect4">
+<h5 id="parameters-14"><a class="anchor" href="#parameters-14"></a><a class="link" href="#parameters-14">Parameters</a></h5>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 11.1111%;">
+<col style="width: 16.6666%;">
+<col style="width: 50%;">
+<col style="width: 22.2223%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Type</th>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Path</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>id</strong><br>
+<em>required</em></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">id</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">string</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Body</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>payload</strong><br>
+<em>required</em></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">payload</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="#_user">User</a></p></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="sect4">
 <h5 id="responses-26"><a class="anchor" href="#responses-26"></a><a class="link" href="#responses-26">Responses</a></h5>
@@ -3651,7 +3669,7 @@ table.CodeRay td.code>pre{padding:0}
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>200</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">OK</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="#_95c27685fb3786310947ea2de25ecc64">Resources«User»</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>204</strong></p></td>
@@ -3695,18 +3713,40 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 </div>
-</div>
-<div class="sect2">
-<h3 id="_user_entity_search_resource"><a class="anchor" href="#_user_entity_search_resource"></a><a class="link" href="#_user_entity_search_resource">3.5. User Entity Search</a></h3>
-<div class="paragraph">
-<p>User Repository</p>
-</div>
 <div class="sect3">
-<h4 id="_listsearchesusingget"><a class="anchor" href="#_listsearchesusingget"></a><a class="link" href="#_listsearchesusingget">3.5.1. listSearches</a></h4>
+<h4 id="_headforitemresourceusinghead_2"><a class="anchor" href="#_headforitemresourceusinghead_2"></a><a class="link" href="#_headforitemresourceusinghead_2">3.6.9. headForItemResource</a></h4>
 <div class="literalblock">
 <div class="content">
-<pre>GET /api/rest-uri/users/search</pre>
+<pre>HEAD /api/rest-uri/users/{id}</pre>
 </div>
+</div>
+<div class="sect4">
+<h5 id="parameters-15"><a class="anchor" href="#parameters-15"></a><a class="link" href="#parameters-15">Parameters</a></h5>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 11.1111%;">
+<col style="width: 16.6666%;">
+<col style="width: 50%;">
+<col style="width: 22.2223%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Type</th>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Path</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>id</strong><br>
+<em>required</em></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">id</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">string</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="sect4">
 <h5 id="responses-27"><a class="anchor" href="#responses-27"></a><a class="link" href="#responses-27">Responses</a></h5>
@@ -3727,7 +3767,12 @@ table.CodeRay td.code>pre{padding:0}
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>200</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">OK</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="#_repositorysearchesresource">RepositorySearchesResource</a></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>204</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>401</strong></p></td>
@@ -3737,11 +3782,6 @@ table.CodeRay td.code>pre{padding:0}
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>403</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">Forbidden</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>404</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Not Found</p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
 </tr>
 </tbody>
@@ -3772,10 +3812,10 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect3">
-<h4 id="_headforsearchesusinghead"><a class="anchor" href="#_headforsearchesusinghead"></a><a class="link" href="#_headforsearchesusinghead">3.5.2. headForSearches</a></h4>
+<h4 id="_optionsforitemresourceusingoptions_2"><a class="anchor" href="#_optionsforitemresourceusingoptions_2"></a><a class="link" href="#_optionsforitemresourceusingoptions_2">3.6.10. optionsForItemResource</a></h4>
 <div class="literalblock">
 <div class="content">
-<pre>HEAD /api/rest-uri/users/search</pre>
+<pre>OPTIONS /api/rest-uri/users/{id}</pre>
 </div>
 </div>
 <div class="sect4">
@@ -3797,7 +3837,7 @@ table.CodeRay td.code>pre{padding:0}
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>200</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">OK</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="#_httpentity">HttpEntity</a></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>204</strong></p></td>
@@ -3841,198 +3881,27 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_optionsforsearchesusingoptions"><a class="anchor" href="#_optionsforsearchesusingoptions"></a><a class="link" href="#_optionsforsearchesusingoptions">3.5.3. optionsForSearches</a></h4>
-<div class="literalblock">
-<div class="content">
-<pre>OPTIONS /api/rest-uri/users/search</pre>
-</div>
-</div>
-<div class="sect4">
-<h5 id="responses-29"><a class="anchor" href="#responses-29"></a><a class="link" href="#responses-29">Responses</a></h5>
-<table class="tableblock frame-all grid-all spread">
-<colgroup>
-<col style="width: 10%;">
-<col style="width: 70%;">
-<col style="width: 20%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-middle">HTTP Code</th>
-<th class="tableblock halign-left valign-middle">Description</th>
-<th class="tableblock halign-left valign-middle">Schema</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>200</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">OK</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="#_httpentity">HttpEntity</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>204</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>401</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Unauthorized</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>403</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Forbidden</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect4">
-<h5 id="consumes-29"><a class="anchor" href="#consumes-29"></a><a class="link" href="#consumes-29">Consumes</a></h5>
-<div class="ulist">
-<ul>
-<li>
-<p><code>application/json</code></p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect4">
-<h5 id="produces-29"><a class="anchor" href="#produces-29"></a><a class="link" href="#produces-29">Produces</a></h5>
-<div class="ulist">
-<ul>
-<li>
-<p><code>application/json</code></p>
-</li>
-<li>
-<p><code>application/hal+json</code></p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_findbyusernameusingget"><a class="anchor" href="#_findbyusernameusingget"></a><a class="link" href="#_findbyusernameusingget">3.5.4. /findByUsername</a></h4>
-<div class="literalblock">
-<div class="content">
-<pre>GET /api/rest-uri/users/search/findByUsername</pre>
-</div>
-</div>
-<div class="sect4">
-<h5 id="parameters-15"><a class="anchor" href="#parameters-15"></a><a class="link" href="#parameters-15">Parameters</a></h5>
-<table class="tableblock frame-all grid-all spread">
-<colgroup>
-<col style="width: 11.1111%;">
-<col style="width: 16.6666%;">
-<col style="width: 50%;">
-<col style="width: 22.2223%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-middle">Type</th>
-<th class="tableblock halign-left valign-middle">Name</th>
-<th class="tableblock halign-left valign-middle">Description</th>
-<th class="tableblock halign-left valign-middle">Schema</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Query</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>param0</strong><br>
-<em>optional</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">param0</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">string</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect4">
-<h5 id="responses-30"><a class="anchor" href="#responses-30"></a><a class="link" href="#responses-30">Responses</a></h5>
-<table class="tableblock frame-all grid-all spread">
-<colgroup>
-<col style="width: 10%;">
-<col style="width: 70%;">
-<col style="width: 20%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-middle">HTTP Code</th>
-<th class="tableblock halign-left valign-middle">Description</th>
-<th class="tableblock halign-left valign-middle">Schema</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>200</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">OK</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="#_user">User</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>401</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Unauthorized</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>403</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Forbidden</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>404</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Not Found</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect4">
-<h5 id="consumes-30"><a class="anchor" href="#consumes-30"></a><a class="link" href="#consumes-30">Consumes</a></h5>
-<div class="ulist">
-<ul>
-<li>
-<p><code>application/json</code></p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect4">
-<h5 id="produces-30"><a class="anchor" href="#produces-30"></a><a class="link" href="#produces-30">Produces</a></h5>
-<div class="ulist">
-<ul>
-<li>
-<p><code>application/json</code></p>
-</li>
-<li>
-<p><code>application/hal+json</code></p>
-</li>
-<li>
-<p><code>application/x-spring-data-compact+json</code></p>
-</li>
-</ul>
-</div>
-</div>
-</div>
 </div>
 <div class="sect2">
-<h3 id="_user_related_services_resource"><a class="anchor" href="#_user_related_services_resource"></a><a class="link" href="#_user_related_services_resource">3.6. User Related Services</a></h3>
+<h3 id="_user_related_services_resource"><a class="anchor" href="#_user_related_services_resource"></a><a class="link" href="#_user_related_services_resource">3.7. User Related Services</a></h3>
 <div class="paragraph">
 <p>Operations with User Models through Rest</p>
 </div>
 <div class="sect3">
-<h4 id="_getalluserusingget"><a class="anchor" href="#_getalluserusingget"></a><a class="link" href="#_getalluserusingget">3.6.1. List All The Users</a></h4>
+<h4 id="_getalluserusingget"><a class="anchor" href="#_getalluserusingget"></a><a class="link" href="#_getalluserusingget">3.7.1. List All The Users</a></h4>
 <div class="literalblock">
 <div class="content">
 <pre>GET /api/user/all</pre>
 </div>
 </div>
 <div class="sect4">
-<h5 id="description-3"><a class="anchor" href="#description-3"></a><a class="link" href="#description-3">Description</a></h5>
+<h5 id="description-5"><a class="anchor" href="#description-5"></a><a class="link" href="#description-5">Description</a></h5>
 <div class="paragraph">
 <p>It List All The User</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="responses-31"><a class="anchor" href="#responses-31"></a><a class="link" href="#responses-31">Responses</a></h5>
+<h5 id="responses-29"><a class="anchor" href="#responses-29"></a><a class="link" href="#responses-29">Responses</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 10%;">
@@ -4071,7 +3940,7 @@ table.CodeRay td.code>pre{padding:0}
 </table>
 </div>
 <div class="sect4">
-<h5 id="consumes-31"><a class="anchor" href="#consumes-31"></a><a class="link" href="#consumes-31">Consumes</a></h5>
+<h5 id="consumes-29"><a class="anchor" href="#consumes-29"></a><a class="link" href="#consumes-29">Consumes</a></h5>
 <div class="ulist">
 <ul>
 <li>
@@ -4081,7 +3950,7 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect4">
-<h5 id="produces-31"><a class="anchor" href="#produces-31"></a><a class="link" href="#produces-31">Produces</a></h5>
+<h5 id="produces-29"><a class="anchor" href="#produces-29"></a><a class="link" href="#produces-29">Produces</a></h5>
 <div class="ulist">
 <ul>
 <li>
@@ -4092,20 +3961,121 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect3">
-<h4 id="_createuserusingpost"><a class="anchor" href="#_createuserusingpost"></a><a class="link" href="#_createuserusingpost">3.6.2. Create User</a></h4>
+<h4 id="_userappsusingget"><a class="anchor" href="#_userappsusingget"></a><a class="link" href="#_userappsusingget">3.7.2. Get Roles For the User</a></h4>
+<div class="literalblock">
+<div class="content">
+<pre>GET /api/user/apps/{username}</pre>
+</div>
+</div>
+<div class="sect4">
+<h5 id="description-6"><a class="anchor" href="#description-6"></a><a class="link" href="#description-6">Description</a></h5>
+<div class="paragraph">
+<p>List All The Roles for the User</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="parameters-16"><a class="anchor" href="#parameters-16"></a><a class="link" href="#parameters-16">Parameters</a></h5>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 11.1111%;">
+<col style="width: 16.6666%;">
+<col style="width: 50%;">
+<col style="width: 22.2223%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Type</th>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Path</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>username</strong><br>
+<em>required</em></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">username</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">string</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="responses-30"><a class="anchor" href="#responses-30"></a><a class="link" href="#responses-30">Responses</a></h5>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 10%;">
+<col style="width: 70%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">HTTP Code</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>200</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">OK</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">object</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>401</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Unauthorized</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>403</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Forbidden</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>404</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Not Found</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="consumes-30"><a class="anchor" href="#consumes-30"></a><a class="link" href="#consumes-30">Consumes</a></h5>
+<div class="ulist">
+<ul>
+<li>
+<p><code>application/json</code></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="produces-30"><a class="anchor" href="#produces-30"></a><a class="link" href="#produces-30">Produces</a></h5>
+<div class="ulist">
+<ul>
+<li>
+<p><code><strong>/</strong></code></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_createuserusingpost"><a class="anchor" href="#_createuserusingpost"></a><a class="link" href="#_createuserusingpost">3.7.3. Create User</a></h4>
 <div class="literalblock">
 <div class="content">
 <pre>POST /api/user/create</pre>
 </div>
 </div>
 <div class="sect4">
-<h5 id="description-4"><a class="anchor" href="#description-4"></a><a class="link" href="#description-4">Description</a></h5>
+<h5 id="description-7"><a class="anchor" href="#description-7"></a><a class="link" href="#description-7">Description</a></h5>
 <div class="paragraph">
 <p>Creates New User</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="parameters-16"><a class="anchor" href="#parameters-16"></a><a class="link" href="#parameters-16">Parameters</a></h5>
+<h5 id="parameters-17"><a class="anchor" href="#parameters-17"></a><a class="link" href="#parameters-17">Parameters</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 11.1111%;">
@@ -4133,7 +4103,7 @@ table.CodeRay td.code>pre{padding:0}
 </table>
 </div>
 <div class="sect4">
-<h5 id="responses-32"><a class="anchor" href="#responses-32"></a><a class="link" href="#responses-32">Responses</a></h5>
+<h5 id="responses-31"><a class="anchor" href="#responses-31"></a><a class="link" href="#responses-31">Responses</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 10%;">
@@ -4177,6 +4147,107 @@ table.CodeRay td.code>pre{padding:0}
 </table>
 </div>
 <div class="sect4">
+<h5 id="consumes-31"><a class="anchor" href="#consumes-31"></a><a class="link" href="#consumes-31">Consumes</a></h5>
+<div class="ulist">
+<ul>
+<li>
+<p><code>application/json</code></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="produces-31"><a class="anchor" href="#produces-31"></a><a class="link" href="#produces-31">Produces</a></h5>
+<div class="ulist">
+<ul>
+<li>
+<p><code><strong>/</strong></code></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_deleteuserusingdelete"><a class="anchor" href="#_deleteuserusingdelete"></a><a class="link" href="#_deleteuserusingdelete">3.7.4. Delete User</a></h4>
+<div class="literalblock">
+<div class="content">
+<pre>DELETE /api/user/delete/{username}</pre>
+</div>
+</div>
+<div class="sect4">
+<h5 id="description-8"><a class="anchor" href="#description-8"></a><a class="link" href="#description-8">Description</a></h5>
+<div class="paragraph">
+<p>Delete User</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="parameters-18"><a class="anchor" href="#parameters-18"></a><a class="link" href="#parameters-18">Parameters</a></h5>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 11.1111%;">
+<col style="width: 16.6666%;">
+<col style="width: 50%;">
+<col style="width: 22.2223%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Type</th>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Path</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>username</strong><br>
+<em>required</em></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">username</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">string</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="responses-32"><a class="anchor" href="#responses-32"></a><a class="link" href="#responses-32">Responses</a></h5>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 10%;">
+<col style="width: 70%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">HTTP Code</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>200</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">OK</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">object</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>204</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>401</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Unauthorized</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>403</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Forbidden</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
 <h5 id="consumes-32"><a class="anchor" href="#consumes-32"></a><a class="link" href="#consumes-32">Consumes</a></h5>
 <div class="ulist">
 <ul>
@@ -4198,20 +4269,20 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect3">
-<h4 id="_deleteuserusingdelete"><a class="anchor" href="#_deleteuserusingdelete"></a><a class="link" href="#_deleteuserusingdelete">3.6.3. Delete User</a></h4>
+<h4 id="_getuserusingget"><a class="anchor" href="#_getuserusingget"></a><a class="link" href="#_getuserusingget">3.7.5. List The User</a></h4>
 <div class="literalblock">
 <div class="content">
-<pre>DELETE /api/user/delete/{userid}</pre>
+<pre>GET /api/user/find/{username}</pre>
 </div>
 </div>
 <div class="sect4">
-<h5 id="description-5"><a class="anchor" href="#description-5"></a><a class="link" href="#description-5">Description</a></h5>
+<h5 id="description-9"><a class="anchor" href="#description-9"></a><a class="link" href="#description-9">Description</a></h5>
 <div class="paragraph">
-<p>Delete User</p>
+<p>It List The User</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="parameters-17"><a class="anchor" href="#parameters-17"></a><a class="link" href="#parameters-17">Parameters</a></h5>
+<h5 id="parameters-19"><a class="anchor" href="#parameters-19"></a><a class="link" href="#parameters-19">Parameters</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 11.1111%;">
@@ -4230,9 +4301,9 @@ table.CodeRay td.code>pre{padding:0}
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Path</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>userid</strong><br>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>username</strong><br>
 <em>required</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">userid</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">username</p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">string</p></td>
 </tr>
 </tbody>
@@ -4257,12 +4328,7 @@ table.CodeRay td.code>pre{padding:0}
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>200</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">OK</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="#_responsemodel">ResponseModel</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>204</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">object</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>401</strong></p></td>
@@ -4272,6 +4338,11 @@ table.CodeRay td.code>pre{padding:0}
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>403</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">Forbidden</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>404</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Not Found</p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">No Content</p></td>
 </tr>
 </tbody>
@@ -4299,14 +4370,14 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect3">
-<h4 id="_meusingget"><a class="anchor" href="#_meusingget"></a><a class="link" href="#_meusingget">3.6.4. Get The current Logged User</a></h4>
+<h4 id="_meusingget"><a class="anchor" href="#_meusingget"></a><a class="link" href="#_meusingget">3.7.6. Get The current Logged User</a></h4>
 <div class="literalblock">
 <div class="content">
 <pre>GET /api/user/me</pre>
 </div>
 </div>
 <div class="sect4">
-<h5 id="description-6"><a class="anchor" href="#description-6"></a><a class="link" href="#description-6">Description</a></h5>
+<h5 id="description-10"><a class="anchor" href="#description-10"></a><a class="link" href="#description-10">Description</a></h5>
 <div class="paragraph">
 <p>Logged User</p>
 </div>
@@ -4372,14 +4443,14 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect3">
-<h4 id="_meroleusingget"><a class="anchor" href="#_meroleusingget"></a><a class="link" href="#_meroleusingget">3.6.5. Get The current Logged Users Role</a></h4>
+<h4 id="_meroleusingget"><a class="anchor" href="#_meroleusingget"></a><a class="link" href="#_meroleusingget">3.7.7. Get The current Logged Users Role</a></h4>
 <div class="literalblock">
 <div class="content">
 <pre>GET /api/user/me/role</pre>
 </div>
 </div>
 <div class="sect4">
-<h5 id="description-7"><a class="anchor" href="#description-7"></a><a class="link" href="#description-7">Description</a></h5>
+<h5 id="description-11"><a class="anchor" href="#description-11"></a><a class="link" href="#description-11">Description</a></h5>
 <div class="paragraph">
 <p>Logged User Role</p>
 </div>
@@ -4445,20 +4516,20 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect3">
-<h4 id="_sendmessageusingpost"><a class="anchor" href="#_sendmessageusingpost"></a><a class="link" href="#_sendmessageusingpost">3.6.6. Sends the Message to User</a></h4>
+<h4 id="_sendmessageusingpost"><a class="anchor" href="#_sendmessageusingpost"></a><a class="link" href="#_sendmessageusingpost">3.7.8. Sends the Message to User</a></h4>
 <div class="literalblock">
 <div class="content">
 <pre>POST /api/user/message/{username}</pre>
 </div>
 </div>
 <div class="sect4">
-<h5 id="description-8"><a class="anchor" href="#description-8"></a><a class="link" href="#description-8">Description</a></h5>
+<h5 id="description-12"><a class="anchor" href="#description-12"></a><a class="link" href="#description-12">Description</a></h5>
 <div class="paragraph">
 <p>Message to User</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="parameters-18"><a class="anchor" href="#parameters-18"></a><a class="link" href="#parameters-18">Parameters</a></h5>
+<h5 id="parameters-20"><a class="anchor" href="#parameters-20"></a><a class="link" href="#parameters-20">Parameters</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 11.1111%;">
@@ -4511,7 +4582,7 @@ table.CodeRay td.code>pre{padding:0}
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>200</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">OK</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="#_messageformat">MessageFormat</a></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">object</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>201</strong></p></td>
@@ -4558,20 +4629,20 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect3">
-<h4 id="_userroleusingget"><a class="anchor" href="#_userroleusingget"></a><a class="link" href="#_userroleusingget">3.6.7. Get Roles For the User</a></h4>
+<h4 id="_userroleusingget"><a class="anchor" href="#_userroleusingget"></a><a class="link" href="#_userroleusingget">3.7.9. Get Roles For the User</a></h4>
 <div class="literalblock">
 <div class="content">
-<pre>GET /api/user/role/{userid}</pre>
+<pre>GET /api/user/role/{username}</pre>
 </div>
 </div>
 <div class="sect4">
-<h5 id="description-9"><a class="anchor" href="#description-9"></a><a class="link" href="#description-9">Description</a></h5>
+<h5 id="description-13"><a class="anchor" href="#description-13"></a><a class="link" href="#description-13">Description</a></h5>
 <div class="paragraph">
 <p>List All The Roles for the User</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="parameters-19"><a class="anchor" href="#parameters-19"></a><a class="link" href="#parameters-19">Parameters</a></h5>
+<h5 id="parameters-21"><a class="anchor" href="#parameters-21"></a><a class="link" href="#parameters-21">Parameters</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 11.1111%;">
@@ -4590,9 +4661,9 @@ table.CodeRay td.code>pre{padding:0}
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Path</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>userid</strong><br>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>username</strong><br>
 <em>required</em></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">userid</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">username</p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">string</p></td>
 </tr>
 </tbody>
@@ -4617,7 +4688,7 @@ table.CodeRay td.code>pre{padding:0}
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>200</strong></p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">OK</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">&lt; <a href="#_role">Role</a> &gt; array</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">object</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>401</strong></p></td>
@@ -4659,20 +4730,20 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect3">
-<h4 id="_updateuserusingput"><a class="anchor" href="#_updateuserusingput"></a><a class="link" href="#_updateuserusingput">3.6.8. Update User</a></h4>
+<h4 id="_updateuserusingput"><a class="anchor" href="#_updateuserusingput"></a><a class="link" href="#_updateuserusingput">3.7.10. Update User</a></h4>
 <div class="literalblock">
 <div class="content">
 <pre>PUT /api/user/update</pre>
 </div>
 </div>
 <div class="sect4">
-<h5 id="description-10"><a class="anchor" href="#description-10"></a><a class="link" href="#description-10">Description</a></h5>
+<h5 id="description-14"><a class="anchor" href="#description-14"></a><a class="link" href="#description-14">Description</a></h5>
 <div class="paragraph">
 <p>Updates User</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="parameters-20"><a class="anchor" href="#parameters-20"></a><a class="link" href="#parameters-20">Parameters</a></h5>
+<h5 id="parameters-22"><a class="anchor" href="#parameters-22"></a><a class="link" href="#parameters-22">Parameters</a></h5>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 11.1111%;">
@@ -4766,12 +4837,12 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect2">
-<h3 id="_profile-controller_resource"><a class="anchor" href="#_profile-controller_resource"></a><a class="link" href="#_profile-controller_resource">3.7. Profile-controller</a></h3>
+<h3 id="_profile-controller_resource"><a class="anchor" href="#_profile-controller_resource"></a><a class="link" href="#_profile-controller_resource">3.8. Profile-controller</a></h3>
 <div class="paragraph">
 <p>Profile Controller</p>
 </div>
 <div class="sect3">
-<h4 id="_listallformsofmetadatausingget"><a class="anchor" href="#_listallformsofmetadatausingget"></a><a class="link" href="#_listallformsofmetadatausingget">3.7.1. listAllFormsOfMetadata</a></h4>
+<h4 id="_listallformsofmetadatausingget"><a class="anchor" href="#_listallformsofmetadatausingget"></a><a class="link" href="#_listallformsofmetadatausingget">3.8.1. listAllFormsOfMetadata</a></h4>
 <div class="literalblock">
 <div class="content">
 <pre>GET /api/rest-uri/profile</pre>
@@ -4838,7 +4909,7 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect3">
-<h4 id="_profileoptionsusingoptions"><a class="anchor" href="#_profileoptionsusingoptions"></a><a class="link" href="#_profileoptionsusingoptions">3.7.2. profileOptions</a></h4>
+<h4 id="_profileoptionsusingoptions"><a class="anchor" href="#_profileoptionsusingoptions"></a><a class="link" href="#_profileoptionsusingoptions">3.8.2. profileOptions</a></h4>
 <div class="literalblock">
 <div class="content">
 <pre>OPTIONS /api/rest-uri/profile</pre>
@@ -4906,12 +4977,12 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect2">
-<h3 id="_repository-controller_resource"><a class="anchor" href="#_repository-controller_resource"></a><a class="link" href="#_repository-controller_resource">3.8. Repository-controller</a></h3>
+<h3 id="_repository-controller_resource"><a class="anchor" href="#_repository-controller_resource"></a><a class="link" href="#_repository-controller_resource">3.9. Repository-controller</a></h3>
 <div class="paragraph">
 <p>Repository Controller</p>
 </div>
 <div class="sect3">
-<h4 id="_listrepositoriesusingget"><a class="anchor" href="#_listrepositoriesusingget"></a><a class="link" href="#_listrepositoriesusingget">3.8.1. listRepositories</a></h4>
+<h4 id="_listrepositoriesusingget"><a class="anchor" href="#_listrepositoriesusingget"></a><a class="link" href="#_listrepositoriesusingget">3.9.1. listRepositories</a></h4>
 <div class="literalblock">
 <div class="content">
 <pre>GET /api/rest-uri</pre>
@@ -4981,7 +5052,7 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect3">
-<h4 id="_headforrepositoriesusinghead"><a class="anchor" href="#_headforrepositoriesusinghead"></a><a class="link" href="#_headforrepositoriesusinghead">3.8.2. headForRepositories</a></h4>
+<h4 id="_headforrepositoriesusinghead"><a class="anchor" href="#_headforrepositoriesusinghead"></a><a class="link" href="#_headforrepositoriesusinghead">3.9.2. headForRepositories</a></h4>
 <div class="literalblock">
 <div class="content">
 <pre>HEAD /api/rest-uri</pre>
@@ -5051,7 +5122,7 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect3">
-<h4 id="_optionsforrepositoriesusingoptions"><a class="anchor" href="#_optionsforrepositoriesusingoptions"></a><a class="link" href="#_optionsforrepositoriesusingoptions">3.8.3. optionsForRepositories</a></h4>
+<h4 id="_optionsforrepositoriesusingoptions"><a class="anchor" href="#_optionsforrepositoriesusingoptions"></a><a class="link" href="#_optionsforrepositoriesusingoptions">3.9.3. optionsForRepositories</a></h4>
 <div class="literalblock">
 <div class="content">
 <pre>OPTIONS /api/rest-uri</pre>
@@ -5121,7 +5192,7 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect3">
-<h4 id="_listrepositoriesusingget_1"><a class="anchor" href="#_listrepositoriesusingget_1"></a><a class="link" href="#_listrepositoriesusingget_1">3.8.4. listRepositories</a></h4>
+<h4 id="_listrepositoriesusingget_1"><a class="anchor" href="#_listrepositoriesusingget_1"></a><a class="link" href="#_listrepositoriesusingget_1">3.9.4. listRepositories</a></h4>
 <div class="literalblock">
 <div class="content">
 <pre>GET /api/rest-uri/</pre>
@@ -5191,7 +5262,7 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect3">
-<h4 id="_headforrepositoriesusinghead_1"><a class="anchor" href="#_headforrepositoriesusinghead_1"></a><a class="link" href="#_headforrepositoriesusinghead_1">3.8.5. headForRepositories</a></h4>
+<h4 id="_headforrepositoriesusinghead_1"><a class="anchor" href="#_headforrepositoriesusinghead_1"></a><a class="link" href="#_headforrepositoriesusinghead_1">3.9.5. headForRepositories</a></h4>
 <div class="literalblock">
 <div class="content">
 <pre>HEAD /api/rest-uri/</pre>
@@ -5261,7 +5332,7 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect3">
-<h4 id="_optionsforrepositoriesusingoptions_1"><a class="anchor" href="#_optionsforrepositoriesusingoptions_1"></a><a class="link" href="#_optionsforrepositoriesusingoptions_1">3.8.6. optionsForRepositories</a></h4>
+<h4 id="_optionsforrepositoriesusingoptions_1"><a class="anchor" href="#_optionsforrepositoriesusingoptions_1"></a><a class="link" href="#_optionsforrepositoriesusingoptions_1">3.9.6. optionsForRepositories</a></h4>
 <div class="literalblock">
 <div class="content">
 <pre>OPTIONS /api/rest-uri/</pre>

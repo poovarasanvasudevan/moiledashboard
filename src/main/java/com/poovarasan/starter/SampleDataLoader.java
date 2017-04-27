@@ -1,13 +1,17 @@
 package com.poovarasan.starter;
 
+import com.poovarasan.models.Apps;
 import com.poovarasan.models.Role;
 import com.poovarasan.models.User;
+import com.poovarasan.repository.AppsRepository;
 import com.poovarasan.service.RoleService;
 import com.poovarasan.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
+
+import java.util.HashSet;
 
 /**
  * Created by poovarasanv on 17/4/17.
@@ -39,9 +43,20 @@ public class SampleDataLoader implements ApplicationRunner {
         for (String u : users) {
             User user = new User();
             user.setUsername(u);
+            user.setFirstName(u);
             user.setPassword(u);
+
+            Apps apps = new Apps();
+            apps.setName("Integration App : " + u);
+            apps.setDescription("Test Integration App" + u);
+            apps.setCreatedBy(user);
+
+            user.setApps(new HashSet<Apps>() {{
+                add(apps);
+            }});
 
             userService.save(user);
         }
+
     }
 }

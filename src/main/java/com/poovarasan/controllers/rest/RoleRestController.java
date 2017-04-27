@@ -1,5 +1,6 @@
 package com.poovarasan.controllers.rest;
 
+import com.poovarasan.controllers.rest.models.ResponseModel;
 import com.poovarasan.models.Role;
 import com.poovarasan.models.User;
 import com.poovarasan.repository.RoleRepository;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.Set;
 
 /**
@@ -39,10 +41,11 @@ public class RoleRestController {
         this.userRepository = userRepository;
     }
 
+
     @RequestMapping(path = "/all", method = RequestMethod.GET)
     @PreAuthorize("hasAnyRole('ADMIN','API')")
     @ApiOperation(value = "List All The Roles", notes = "It List All The Roles")
-    public List<Role> getAllRole() {
+    public Object getAllRole() {
         return roleRepository.findAll();
     }
 
@@ -50,8 +53,9 @@ public class RoleRestController {
     @RequestMapping(path = "/user/{roleid}", method = RequestMethod.GET)
     @PreAuthorize("hasAnyRole('ADMIN','API')")
     @ApiOperation(value = "List All The Users associated to that role", notes = "It List All The User associated to that role")
-    public Set<User> getUserRoles(@PathVariable("roleid") String roleid) {
-        return roleRepository.findByName(roleid).getUsers();
+    public Object getUserRoles(@PathVariable("roleid") String roleid) {
+        Optional<Role> role = roleRepository.findByName(roleid);
+        return role.isPresent() ? role.get().getUsers() : new ResponseModel(400, "Role Not Present");
     }
 
 }

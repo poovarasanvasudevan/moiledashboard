@@ -7,6 +7,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import springfox.documentation.annotations.ApiIgnore;
 
+import java.util.Optional;
 import java.util.Set;
 
 
@@ -16,5 +17,5 @@ import java.util.Set;
 @RepositoryRestResource(collectionResourceRel = "roles", path = "roles")
 public interface RoleRepository extends BaseRepository<Role, String> {
     @ApiIgnore
-    Role findByName(String role);
+    Optional<Role> findByName(String role);
 }

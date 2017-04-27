@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.poovarasan.listeners.UserListener;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Where;
+import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.*;
 import java.sql.Date;
@@ -33,10 +34,13 @@ public class User {
     /**
      * User firstName.
      */
+    @NotEmpty
     private String firstName;
 
     private String lastName;
 
+    @NotEmpty
+    @Column(unique = true)
     private String username;
 
     @Column(unique = true)
@@ -44,8 +48,6 @@ public class User {
 
 
     private Timestamp createdDate;
-
-
     private Timestamp updatedDate;
 
     @JsonIgnore
@@ -64,6 +66,19 @@ public class User {
     @JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
     private Set<Role> roles;
 
+
+    @JsonIgnore
+    @OneToMany(mappedBy = "createdBy", cascade = CascadeType.ALL)
+    private Set<Apps> apps;
+
+
+    public Set<Apps> getApps() {
+        return apps;
+    }
+
+    public void setApps(Set<Apps> apps) {
+        this.apps = apps;
+    }
 
     @JsonIgnore
     private Boolean active;

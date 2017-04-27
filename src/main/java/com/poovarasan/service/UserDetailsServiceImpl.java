@@ -17,6 +17,7 @@ import java.util.Set;
 
 /**
  * Created by poovarasanv on 12/4/17.
+ * Project : mobiledashboard
  */
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {
@@ -30,7 +31,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     @Override
     @Transactional(readOnly = true)
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        User user = userRepository.findByUsername(username);
+        User user = userRepository.findByUsername(username).get();
         Set<GrantedAuthority> grantedAuthorities = new HashSet<>();
         if(user.getRoles().size() > 0) {
             for (Role role : user.getRoles()) {

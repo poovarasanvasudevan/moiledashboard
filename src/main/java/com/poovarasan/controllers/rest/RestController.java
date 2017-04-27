@@ -41,7 +41,7 @@ public class RestController {
     @Deprecated
     @RequestMapping(path = "/stomp/ping/{userid}", method = RequestMethod.POST)
     @ApiOperation(value = "Ping the MQTT User", notes = "Sends Simple Messsage To topic of mqtt User : @This API is DEPRECATED instead Use /api/user/message/{username} Call")
-    public ResponseModel sendtoUser(@PathVariable("userid") String userid, @RequestBody String messageToSend) {
+    public Object sendtoUser(@PathVariable("userid") String userid, @RequestBody String messageToSend) {
         Message message = new Message();
         message.setText(messageToSend);
         simpMessagingTemplate.convertAndSendToUser(userid, "/queue/search", message);
