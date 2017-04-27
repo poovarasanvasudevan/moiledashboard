@@ -5,6 +5,7 @@ import org.nextrtc.signalingserver.NextRTCConfig;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.integration.annotation.IntegrationComponentScan;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;

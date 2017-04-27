@@ -22,8 +22,12 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
+    private final UserDetailsService userDetailsService;
+
     @Autowired
-    private UserDetailsService userDetailsService;
+    public WebSecurityConfig(UserDetailsService userDetailsService) {
+        this.userDetailsService = userDetailsService;
+    }
 
 
     @Bean
@@ -41,8 +45,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Order(1)
     public static class ApiWebSecurityConfig extends WebSecurityConfigurerAdapter {
 
+        private final AuthenticationEntryPoint authenticationEntryPoint;
+
         @Autowired
-        private AuthenticationEntryPoint authenticationEntryPoint;
+        public ApiWebSecurityConfig(AuthenticationEntryPoint authenticationEntryPoint) {
+            this.authenticationEntryPoint = authenticationEntryPoint;
+        }
 
         @Override
         protected void configure(HttpSecurity http) throws Exception {

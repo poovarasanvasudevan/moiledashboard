@@ -3,6 +3,7 @@ package com.poovarasan.models;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.poovarasan.listeners.UserListener;
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.Where;
 
 import javax.persistence.*;
 import java.sql.Date;
@@ -16,6 +17,7 @@ import java.util.Set;
 @Entity
 @Table(name = "user")
 @EntityListeners(value = {UserListener.class})
+@Where(clause = "active=true")
 public class User {
 
 
@@ -62,6 +64,17 @@ public class User {
     @JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
     private Set<Role> roles;
 
+
+    @JsonIgnore
+    private Boolean active;
+
+    public Boolean getActive() {
+        return active;
+    }
+
+    public void setActive(Boolean active) {
+        this.active = active;
+    }
 
     public User() {
     }
