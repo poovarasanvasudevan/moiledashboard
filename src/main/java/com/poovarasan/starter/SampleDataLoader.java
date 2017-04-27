@@ -58,5 +58,7 @@ public class SampleDataLoader implements ApplicationRunner {
             userService.save(user);
         }
 
+       // java.net.URL classUrl = this.getClass().getResource("com.sun.mail.util.TraceInputStream");
+        //System.out.println("Java Mail :" + classUrl.getFile());
     }
 }
