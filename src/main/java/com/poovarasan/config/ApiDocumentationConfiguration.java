@@ -34,10 +34,10 @@ public class ApiDocumentationConfiguration {
     private springfox.documentation.service.ApiInfo metadata() {
         return new ApiInfoBuilder()
                 .title("REST API documentation")
-                .description("see https://github.com/StefanSchubert/sabi")
+                .description("see https://github.com/poovarasanvasudevan/moiledashboard")
                 .version("1.0")
                 .license("MIT Licence (MIT)")
-                .licenseUrl("https://github.com/StefanSchubert/sabi/blob/master/LICENSE")
+                .licenseUrl("https://github.com/poovarasanvasudevan/moiledashboard")
                 .contact(new Contact("Poovarasan Vasudevan", "http://shpt.in", "poosan9@gmail.com"))
                 .build();
     }
