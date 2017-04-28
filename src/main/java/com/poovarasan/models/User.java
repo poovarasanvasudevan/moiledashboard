@@ -15,7 +15,7 @@ import java.util.Set;
  * Project : mobiledashboard
  */
 @Entity
-@Table(name = "user")
+@Table(name = "USER")
 @EntityListeners(value = {UserListener.class})
 @Where(clause = "active=true")
 public class User {

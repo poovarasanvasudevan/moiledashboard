@@ -10,7 +10,7 @@ import java.util.Set;
  * Created by poovarasanv on 12/4/17.
  */
 @Entity
-@Table(name = "role")
+@Table(name = "ROLE")
 public class Role {
 
     @Id

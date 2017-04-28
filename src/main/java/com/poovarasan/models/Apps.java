@@ -3,11 +3,11 @@ package com.poovarasan.models;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.poovarasan.listeners.AppsListener;
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.Where;
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.*;
-import javax.validation.constraints.Min;
 import java.sql.Timestamp;
 
 /**
@@ -16,7 +16,8 @@ import java.sql.Timestamp;
  */
 @Entity
 @EntityListeners(value = {AppsListener.class})
-@Table(name = "apps")
+@Table(name = "APPS")
+@Where(clause = "active=true")
 public class Apps {
 
     /**
@@ -45,6 +46,19 @@ public class Apps {
     @JsonIgnore
     private User createdBy;
 
+
+    @JsonIgnore
+    @Column()
+    private boolean active = true;
+
+
+    public boolean isActive() {
+        return active;
+    }
+
+    public void setActive(boolean active) {
+        this.active = active;
+    }
 
     private Timestamp createdDate;
     private Timestamp updatedDate;
