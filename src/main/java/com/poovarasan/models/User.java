@@ -7,7 +7,6 @@ import org.hibernate.annotations.Where;
 import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.*;
-import java.sql.Date;
 import java.sql.Timestamp;
 import java.util.Set;
 
@@ -56,6 +55,7 @@ public class User {
 
     @JsonIgnore
     private String password;
+
 
     @JsonIgnore
     @Transient
@@ -217,4 +217,5 @@ public class User {
     public void setUpdatedDate(Timestamp updatedDate) {
         this.updatedDate = updatedDate;
     }
+
 }

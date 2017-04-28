@@ -1,8 +1,14 @@
 package com.poovarasan.starter;
 
+import com.enterprisedt.net.ftp.FTPClient;
 import org.apache.ftpserver.FtpServer;
+import org.apache.ftpserver.FtpServerFactory;
 import org.apache.ftpserver.ftplet.FtpException;
+import org.apache.ftpserver.ftplet.User;
+import org.apache.ftpserver.ftplet.UserManager;
+import org.apache.ftpserver.usermanager.UserFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
@@ -14,16 +20,41 @@ import org.springframework.stereotype.Component;
 @Component
 public class FTPServerStarter implements ApplicationRunner {
 
-    private final FtpServer ftpServer;
+    private final FtpServerFactory ftpServerFactory;
+    private final UserManager userManager;
+    private final FTPClient ftpClient;
+
+    @Value("${app.ftp.storage}")
+    String ftpStorage;
+
+    @Value("${app.ftp.username}")
+    String ftpUsername;
+
+    @Value("${app.ftp.password}")
+    String ftpPassword;
+
 
     @Autowired
-    public FTPServerStarter(FtpServer ftpServer) {
-        this.ftpServer = ftpServer;
+    public FTPServerStarter(FtpServerFactory ftpServerFactory, UserManager userManager, FTPClient ftpClient) {
+        this.ftpServerFactory = ftpServerFactory;
+        this.userManager = userManager;
+        this.ftpClient = ftpClient;
     }
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
         try {
+
+            UserFactory userFact = new UserFactory();
+            userFact.setName(ftpUsername);
+            userFact.setPassword(ftpPassword);
+            userFact.setHomeDirectory(ftpStorage);
+            User user = userFact.createUser();
+            userManager.save(user);
+
+            ftpServerFactory.setUserManager(userManager);
+            FtpServer ftpServer = ftpServerFactory.createServer();
+
             if (ftpServer.isStopped()) {
                 ftpServer.start();
                 System.out.print("FTP : Server Started");
@@ -34,6 +65,11 @@ public class FTPServerStarter implements ApplicationRunner {
                 ftpServer.start();
                 System.out.print("FTP : Server Started");
             }
+            ftpClient.connect();
+            ftpClient.login(ftpUsername,ftpPassword);
+
+
+            System.out.print("FTP : Client Connected");
         } catch (FtpException e) {
             e.printStackTrace();
         }

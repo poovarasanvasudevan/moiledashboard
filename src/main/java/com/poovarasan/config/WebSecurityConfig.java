@@ -1,10 +1,10 @@
 package com.poovarasan.config;
 
+import com.poovarasan.handler.AuthSuccessHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.Order;
-import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
@@ -70,9 +70,16 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Order(2)
     public static class FormWebSecurityConfig extends WebSecurityConfigurerAdapter {
 
+        final AuthSuccessHandler authSuccessHandler;
+
+        @Autowired
+        public FormWebSecurityConfig(AuthSuccessHandler authSuccessHandler) {
+            this.authSuccessHandler = authSuccessHandler;
+        }
+
         @Override
         public void configure(WebSecurity web) throws Exception {
-            web.ignoring().antMatchers("/css/**", "/docs/**","/js/**", "/img/**", "/apidocs/", "/resources/**", "/test", "/webjars/**", "/configuration/ui", "/v2/**", "/swagger-ui.html","/swagger/**");
+            web.ignoring().antMatchers("/css/**", "/docs/**", "/js/**", "/img/**", "/apidocs/", "/resources/**", "/test", "/webjars/**", "/configuration/ui", "/v2/**", "/swagger-ui.html", "/swagger/**");
         }
 
         @Override
@@ -81,7 +88,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                     .authorizeRequests() //Authorize Request Configuration
                     .anyRequest().authenticated()
                     //Login Form configuration for all others
-                    .and().formLogin().loginPage("/").defaultSuccessUrl("/home").permitAll()
+                    .and().formLogin().successHandler(authSuccessHandler).loginPage("/").defaultSuccessUrl("/home").permitAll()
                     //Logout Form configuration
                     .and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout")).logoutSuccessUrl("/?logout").permitAll();
 

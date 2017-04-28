@@ -2,13 +2,10 @@ package com.poovarasan.listeners;
 
 import com.poovarasan.models.User;
 import org.apache.commons.lang3.RandomStringUtils;
-import org.apache.commons.lang3.RandomUtils;
 
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
-import java.sql.Date;
 import java.sql.Timestamp;
-import java.util.UUID;
 
 /**
  * Created by poovarasanv on 13/4/17.
