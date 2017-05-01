@@ -88,19 +88,16 @@ public class VideoHandler extends TextWebSocketHandler {
             }
 
             // 4. Gather ICE candidates
-            webRtcEndpoint.addIceCandidateFoundListener(new EventListener<IceCandidateFoundEvent>() {
-                @Override
-                public void onEvent(IceCandidateFoundEvent event) {
-                    JsonObject response = new JsonObject();
-                    response.addProperty("id", "iceCandidate");
-                    response.add("candidate", JsonUtils.toJsonObject(event.getCandidate()));
-                    try {
-                        synchronized (session) {
-                            session.sendMessage(new TextMessage(response.toString()));
-                        }
-                    } catch (IOException e) {
-                        log.error(e.getMessage());
+            webRtcEndpoint.addIceCandidateFoundListener(event -> {
+                JsonObject response1 = new JsonObject();
+                response1.addProperty("id", "iceCandidate");
+                response1.add("candidate", JsonUtils.toJsonObject(event.getCandidate()));
+                try {
+                    synchronized (session) {
+                        session.sendMessage(new TextMessage(response1.toString()));
                     }
+                } catch (IOException e) {
+                    log.error(e.getMessage());
                 }
             });
             webRtcEndpoint.gatherCandidates();

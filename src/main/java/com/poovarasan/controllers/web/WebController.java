@@ -29,6 +29,12 @@ public class WebController {
         return "swagger/index";
     }
 
+    @RequestMapping(path = "/viddisplay",method = RequestMethod.GET)
+    public String videodis(Model model) {
+        model.addAttribute("swagger", "/api-docs");
+        return "video/video";
+    }
+
     @RequestMapping(path = "/docs", method = RequestMethod.GET)
     public String docs(Model model) {
         model.addAttribute("swagger", true);
