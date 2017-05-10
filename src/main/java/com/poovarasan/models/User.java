@@ -58,7 +58,6 @@ public class User {
 
 
     @JsonIgnore
-    @Transient
     private String passwordConfirm;
 
     @JsonIgnore
@@ -71,6 +70,17 @@ public class User {
     @OneToMany(mappedBy = "createdBy", cascade = CascadeType.ALL)
     private Set<Apps> apps;
 
+
+    @Column(columnDefinition = "TEXT")
+    private String vcard;
+
+    public String getVcard() {
+        return vcard;
+    }
+
+    public void setVcard(String vcard) {
+        this.vcard = vcard;
+    }
 
     public Set<Apps> getApps() {
         return apps;

@@ -23,7 +23,8 @@ public class WebRTCConfig implements WebSocketConfigurer{
 
     @Bean
     public KurentoClient kurentoClient() {
-        return KurentoClient.create(System.getProperty("kms.url", DEFAULT_KMS_WS_URI));
+       // return KurentoClient.create(System.getProperty("kms.url", DEFAULT_KMS_WS_URI));
+        return null;
     }
 
     @Override
