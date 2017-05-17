@@ -55,13 +55,13 @@ client.connect(options);
 Port Binding
 ----------------------------------------------------
 
-| PORT  | Application Usage         |
-|-------|---------------------------|
-| 8097  |Application                |
-| 8881  |MQTT                       |
-| 8882  |MQTT Websocket             |
-| 8883  |MQTT SSL Port              |
-| 8884  |MQTT secure Websocket      |
-| 7721  |FTP Port                   |
-| 7723  |SSH Port                   |
-| 7555  |XMPP Port                  |
+| PORT  | Application Usage                 |
+|-------|-----------------------------------|
+| 8097  |Application  (Secure)              |
+| 8881  |MQTT                               |
+| 8882  |MQTT Websocket                     |
+| 8883  |MQTT SSL Port   (Secure)           |
+| 8884  |MQTT secure Websocket  (Secure)    |
+| 7721  |FTP Port (Secure)                  |
+| 7723  |SSH Port                           |
+| 7555  |XMPP Port (Secure)                 |
