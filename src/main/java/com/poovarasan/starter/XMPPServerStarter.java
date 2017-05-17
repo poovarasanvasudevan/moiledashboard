@@ -1,6 +1,7 @@
 package com.poovarasan.starter;
 
 import com.poovarasan.base.XMPPAuth;
+import com.poovarasan.config.DBRosterManager;
 import com.poovarasan.managers.DBVCardManager;
 import com.poovarasan.managers.XMPPPrivateStorageManager;
 import com.poovarasan.repository.PrivateStorageRepository;
@@ -18,9 +19,11 @@ import org.apache.vysper.xmpp.modules.extension.xep0119_xmppping.XmppPingModule;
 import org.apache.vysper.xmpp.modules.extension.xep0133_service_administration.ServiceAdministrationModule;
 import org.apache.vysper.xmpp.modules.extension.xep0202_entity_time.EntityTimeModule;
 import org.apache.vysper.xmpp.modules.roster.RosterModule;
-import org.apache.vysper.xmpp.modules.roster.persistence.MemoryRosterManager;
 import org.apache.vysper.xmpp.server.ServerFeatures;
 import org.apache.vysper.xmpp.server.XMPPServer;
+import org.mapdb.DB;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.ApplicationArguments;
@@ -39,6 +42,8 @@ import java.io.IOException;
 @Component
 public class XMPPServerStarter implements ApplicationRunner {
 
+    final Logger logger = LoggerFactory.getLogger(XMPPServerStarter.class);
+
     @Value("${app.xmpp.domain}")
     String xmppDoimain;
 
@@ -54,14 +59,17 @@ public class XMPPServerStarter implements ApplicationRunner {
     private final UserRepository userRepository;
     private final PrivateStorageRepository privateStorageRepository;
     private final BCryptPasswordEncoder bCryptPasswordEncoder;
-   // private final ConcurrentMap<String, Stanza> stringStanzaConcurrentMap;
+
+    private final DB db;
+    // private final ConcurrentMap<String, Stanza> stringStanzaConcurrentMap;
 
     @Autowired
-    public XMPPServerStarter(UserRepository userRepository, PrivateStorageRepository privateStorageRepository, BCryptPasswordEncoder bCryptPasswordEncoder) {
+    public XMPPServerStarter(UserRepository userRepository, PrivateStorageRepository privateStorageRepository, BCryptPasswordEncoder bCryptPasswordEncoder, DB db) {
         this.userRepository = userRepository;
         this.privateStorageRepository = privateStorageRepository;
         this.bCryptPasswordEncoder = bCryptPasswordEncoder;
-      //  this.stringStanzaConcurrentMap = stringStanzaConcurrentMap;
+        //  this.stringStanzaConcurrentMap = stringStanzaConcurrentMap;
+        this.db = db;
     }
 
 
@@ -79,6 +87,7 @@ public class XMPPServerStarter implements ApplicationRunner {
 
         XMPPServer xmppServer = new SpringCompatibleXMPPServer(xmppDoimain);
 
+        logger.info("Setting TCP End Point");
         TCPEndpoint tcpEndpoint = new TCPEndpoint();
         tcpEndpoint.setPort(6232);
 
@@ -88,18 +97,21 @@ public class XMPPServerStarter implements ApplicationRunner {
         xmppServer.setStorageProviderRegistry(openStorageProviderRegistry());
 
         try {
+            logger.info("Setting TLS Certificate");
             xmppServer.setTLSCertificateInfo(keyStore.getFile(), keyPassword);
         } catch (IOException e) {
             e.printStackTrace();
         }
 
 
+        logger.info("Starting XMPP server");
         xmppServer.start();
 
 //        xmppServer.getServerRuntimeContext().getServerFeatures()
 //                .setStartTLSRequired(false);
 
 
+        logger.info("Adding Modules");
         xmppServer.addModule(new XmppPingModule());
         xmppServer.addModule(new SoftwareVersionModule());
         xmppServer.addModule(new EntityTimeModule());
@@ -110,14 +122,11 @@ public class XMPPServerStarter implements ApplicationRunner {
         xmppServer.addModule(new InBandRegistrationModule());
         xmppServer.addModule(new RosterModule());
 
-        System.out.println("XMPP Server Started");
     }
 
     private OpenStorageProviderRegistry openStorageProviderRegistry() {
-
-
         OpenStorageProviderRegistry openStorageProviderRegistry = new OpenStorageProviderRegistry();
-        openStorageProviderRegistry.add(new MemoryRosterManager());
+        openStorageProviderRegistry.add(new DBRosterManager(db));
         openStorageProviderRegistry.add(new XMPPAuth(userRepository, bCryptPasswordEncoder));
         openStorageProviderRegistry.add(new DBVCardManager(userRepository));
         //openStorageProviderRegistry.add(new XMPPOfflineStorage(stringStanzaConcurrentMap));

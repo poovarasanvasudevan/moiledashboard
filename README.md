@@ -51,3 +51,11 @@ MqttConnectOptions options = new MqttConnectOptions();
 options.setSocketFactory(ssf);
 client.connect(options);
 ```
+
+### Port Binding
+
+| PORT  | Application Usage  |
+|-------|------------------- |
+| 8097  |Application         |
+| 8881  |MQTT                |
+| 8882  |MQTT Websocket      |
