@@ -2,7 +2,6 @@ package com.poovarasan.starter;
 
 import com.poovarasan.base.XMPPAuth;
 import com.poovarasan.managers.DBVCardManager;
-import com.poovarasan.managers.XMPPOfflineStorage;
 import com.poovarasan.managers.XMPPPrivateStorageManager;
 import com.poovarasan.repository.PrivateStorageRepository;
 import com.poovarasan.repository.UserRepository;
@@ -22,7 +21,6 @@ import org.apache.vysper.xmpp.modules.roster.RosterModule;
 import org.apache.vysper.xmpp.modules.roster.persistence.MemoryRosterManager;
 import org.apache.vysper.xmpp.server.ServerFeatures;
 import org.apache.vysper.xmpp.server.XMPPServer;
-import org.apache.vysper.xmpp.stanza.Stanza;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.ApplicationArguments;
@@ -33,7 +31,6 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
-import java.util.concurrent.ConcurrentMap;
 
 /**
  * Created by poovarasanv on 10/5/17.
@@ -54,24 +51,17 @@ public class XMPPServerStarter implements ApplicationRunner {
     @Value("${app.key.password}")
     String keyPassword;
 
-    private final
-    UserRepository userRepository;
-
-    private final
-    PrivateStorageRepository privateStorageRepository;
-
-    private final
-    BCryptPasswordEncoder bCryptPasswordEncoder;
-
-
-    private final ConcurrentMap<String, Stanza>  stringStanzaConcurrentMap;
+    private final UserRepository userRepository;
+    private final PrivateStorageRepository privateStorageRepository;
+    private final BCryptPasswordEncoder bCryptPasswordEncoder;
+   // private final ConcurrentMap<String, Stanza> stringStanzaConcurrentMap;
 
     @Autowired
-    public XMPPServerStarter(UserRepository userRepository, PrivateStorageRepository privateStorageRepository, BCryptPasswordEncoder bCryptPasswordEncoder, ConcurrentMap<String, Stanza> stringStanzaConcurrentMap) {
+    public XMPPServerStarter(UserRepository userRepository, PrivateStorageRepository privateStorageRepository, BCryptPasswordEncoder bCryptPasswordEncoder) {
         this.userRepository = userRepository;
         this.privateStorageRepository = privateStorageRepository;
         this.bCryptPasswordEncoder = bCryptPasswordEncoder;
-        this.stringStanzaConcurrentMap = stringStanzaConcurrentMap;
+      //  this.stringStanzaConcurrentMap = stringStanzaConcurrentMap;
     }
 
 
@@ -130,7 +120,7 @@ public class XMPPServerStarter implements ApplicationRunner {
         openStorageProviderRegistry.add(new MemoryRosterManager());
         openStorageProviderRegistry.add(new XMPPAuth(userRepository, bCryptPasswordEncoder));
         openStorageProviderRegistry.add(new DBVCardManager(userRepository));
-        openStorageProviderRegistry.add(new XMPPOfflineStorage(stringStanzaConcurrentMap));
+        //openStorageProviderRegistry.add(new XMPPOfflineStorage(stringStanzaConcurrentMap));
         openStorageProviderRegistry.add(new XMPPPrivateStorageManager(privateStorageRepository));
         return openStorageProviderRegistry;
     }

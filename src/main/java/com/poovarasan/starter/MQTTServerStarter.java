@@ -14,9 +14,8 @@ import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PreDestroy;
+import java.util.Collections;
 import java.util.List;
-
-import static java.util.Arrays.asList;
 
 /**
  * Created by poovarasanv on 17/5/17.
@@ -38,7 +37,7 @@ public class MQTTServerStarter implements ApplicationRunner {
 
         mqttBroker = new Server();
 
-        List<? extends InterceptHandler> userHandlers = asList(new MQTTPublishListener());
+        List<? extends InterceptHandler> userHandlers = Collections.singletonList(new MQTTPublishListener());
 
         mqttBroker.startServer(classPathConfig, userHandlers);
         System.out.println("MQTT Server Started");

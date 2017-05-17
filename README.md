@@ -15,6 +15,11 @@ keytool -keystore mqttclient.jks -genkey -keyalg RSA
 keytool -keystore mqttclient.jks -import -alias tomcat -file mqttserver.crt -trustcacerts
 ```
 
+#### SSH Keystore
+```
+keytool -genkey -keystore ./sshkey -keyalg RSA
+```
+
 ###Java Config For Client SSL Mqtt Ticket 
 
 ```
