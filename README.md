@@ -53,9 +53,15 @@ client.connect(options);
 ```
 
 ### Port Binding
+----------------------------------------------------
 
-| PORT  | Application Usage  |
-|-------|------------------- |
-| 8097  |Application         |
-| 8881  |MQTT                |
-| 8882  |MQTT Websocket      |
+| PORT  | Application Usage         |
+|-------|---------------------------|
+| 8097  |Application                |
+| 8881  |MQTT                       |
+| 8882  |MQTT Websocket             |
+| 8883  |MQTT SSL Port              |
+| 8884  |MQTT secure Websocket      |
+| 7721  |FTP Port                   |
+| 7723  |SSH Port                   |
+| 7555  |XMPP Port                  |
