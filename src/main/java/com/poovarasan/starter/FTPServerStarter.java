@@ -1,6 +1,8 @@
 package com.poovarasan.starter;
 
-import com.enterprisedt.net.ftp.FTPClient;
+import org.apache.commons.net.PrintCommandListener;
+import org.apache.commons.net.ftp.FTPSClient;
+import org.apache.commons.net.ftp.FTPSTrustManager;
 import org.apache.ftpserver.FtpServer;
 import org.apache.ftpserver.FtpServerFactory;
 import org.apache.ftpserver.ftplet.FtpException;
@@ -14,6 +16,7 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PreDestroy;
+import java.io.PrintWriter;
 
 /**
  * Created by poovarasanv on 27/4/17.
@@ -24,10 +27,13 @@ public class FTPServerStarter implements ApplicationRunner {
 
     private final FtpServerFactory ftpServerFactory;
     private final UserManager userManager;
-    private final FTPClient ftpClient;
+    private final FTPSClient ftpClient;
 
     @Value("${app.ftp.storage}")
     String ftpStorage;
+
+    @Value("${app.ftp.port}")
+    Integer ftpPort;
 
     @Value("${app.ftp.username}")
     String ftpUsername;
@@ -35,10 +41,13 @@ public class FTPServerStarter implements ApplicationRunner {
     @Value("${app.ftp.password}")
     String ftpPassword;
 
+    @Value("${app.ftp.host}")
+    String ftpHost;
+
     private FtpServer ftpServer;
 
     @Autowired
-    public FTPServerStarter(FtpServerFactory ftpServerFactory, UserManager userManager, FTPClient ftpClient) {
+    public FTPServerStarter(FtpServerFactory ftpServerFactory, UserManager userManager, FTPSClient ftpClient) {
         this.ftpServerFactory = ftpServerFactory;
         this.userManager = userManager;
         this.ftpClient = ftpClient;
@@ -56,7 +65,9 @@ public class FTPServerStarter implements ApplicationRunner {
             userManager.save(user);
 
             ftpServerFactory.setUserManager(userManager);
+
             ftpServer = ftpServerFactory.createServer();
+
 
             if (ftpServer.isStopped()) {
                 ftpServer.start();
@@ -68,7 +79,9 @@ public class FTPServerStarter implements ApplicationRunner {
                 ftpServer.start();
                 System.out.print("FTP : Server Started");
             }
-            ftpClient.connect();
+
+
+            ftpClient.connect(ftpHost,ftpPort);
             ftpClient.login(ftpUsername,ftpPassword);
 
 
