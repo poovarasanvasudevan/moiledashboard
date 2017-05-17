@@ -205,6 +205,12 @@
             <version>LATEST</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.itextpdf</groupId>
+            <artifactId>itext7-core</artifactId>
+            <version>7.0.2</version>
+            <type>pom</type>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.security</groupId>
@@ -309,7 +315,6 @@
                     </execution>
                 </executions>
             </plugin>
-
         </plugins>
     </build>
 

@@ -17,7 +17,7 @@ keytool -keystore mqttclient.jks -import -alias tomcat -file mqttserver.crt -tru
 
 ###Java Config For Client SSL Mqtt Ticket 
 
-```$java
+```
 public SSLSocketFactory configureSSLSocketFactory() {
     KeyStore ks = KeyStore.getInstance("JKS");
     InputStream jksInputStream = new FileInputStream("mqttclient.jks")

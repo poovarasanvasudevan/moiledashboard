@@ -4,11 +4,11 @@
  */
 
 
-var ws = new WebSocket('wss://' + location.host + '/video');
-var videoInput;
-var videoOutput;
-var webRtcPeer;
-var state = null;
+let ws = new WebSocket('wss://' + location.host + '/video');
+let videoInput;
+let videoOutput;
+let webRtcPeer;
+let state = null;
 
 const I_CAN_START = 0;
 const I_CAN_STOP = 1;
@@ -26,11 +26,11 @@ function start() {
 
     console.log('Creating WebRtcPeer and generating local sdp offer ...');
 
-    var options = {
+    let options = {
         localVideo : videoInput,
         remoteVideo : videoOutput,
         onicecandidate : onIceCandidate
-    }
+    };
     webRtcPeer = new kurentoUtils.WebRtcPeer.WebRtcPeerSendrecv(options,
         function(error) {
             if (error)
@@ -43,10 +43,10 @@ function onOffer(error, offerSdp) {
     if (error)
         return console.error('Error generating the offer');
     console.info('Invoking SDP offer callback function ' + location.host);
-    var message = {
+    let message = {
         id : 'start',
         sdpOffer : offerSdp
-    }
+    };
     sendMessage(message);
 }
 
@@ -57,7 +57,7 @@ function onError(error) {
 function onIceCandidate(candidate) {
     console.log('Local candidate' + JSON.stringify(candidate));
 
-    var message = {
+    let message = {
         id : 'onIceCandidate',
         candidate : candidate
     };
@@ -81,7 +81,7 @@ function stop() {
         webRtcPeer.dispose();
         webRtcPeer = null;
 
-        var message = {
+        let message = {
             id : 'stop'
         };
         sendMessage(message);
