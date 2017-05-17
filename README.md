@@ -52,7 +52,7 @@ options.setSocketFactory(ssf);
 client.connect(options);
 ```
 
-### Port Binding
+Port Binding
 ----------------------------------------------------
 
 | PORT  | Application Usage         |
