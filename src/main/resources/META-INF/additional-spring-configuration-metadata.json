@@ -9,6 +9,11 @@
       "name": "springfox.documentation.swagger.v2.path",
       "type": "java.lang.String",
       "description": "Description for springfox.documentation.swagger.v2.path."
+    },
+    {
+      "name": "app.socket.userprefix",
+      "type": "java.lang.String",
+      "description": "Description for app.socket.userprefix."
     }
   ]
 }

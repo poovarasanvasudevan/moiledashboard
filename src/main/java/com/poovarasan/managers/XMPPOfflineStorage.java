@@ -2,7 +2,6 @@ package com.poovarasan.managers;
 
 import org.apache.vysper.xmpp.modules.extension.xep0160_offline_storage.AbstractOfflineStorageProvider;
 import org.apache.vysper.xmpp.stanza.Stanza;
-
 import java.util.Collection;
 
 /**

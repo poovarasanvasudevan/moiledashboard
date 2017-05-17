@@ -28,7 +28,6 @@ public class XMPPPrivateStorageManager implements PrivateDataPersistenceManager 
     public String getPrivateData(Entity entity, String s) {
         Optional<XMPPPrivateDataStorage> xmppPrivateDataStorages = privateStorageRepository.findByNodeAndKey(entity.getNode(), s);
         return xmppPrivateDataStorages.map(XMPPPrivateDataStorage::getData).orElse(null);
-
     }
 
     @Override

@@ -13,6 +13,8 @@ import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PreDestroy;
+
 /**
  * Created by poovarasanv on 27/4/17.
  * Project : mobiledashboard
@@ -33,6 +35,7 @@ public class FTPServerStarter implements ApplicationRunner {
     @Value("${app.ftp.password}")
     String ftpPassword;
 
+    private FtpServer ftpServer;
 
     @Autowired
     public FTPServerStarter(FtpServerFactory ftpServerFactory, UserManager userManager, FTPClient ftpClient) {
@@ -53,7 +56,7 @@ public class FTPServerStarter implements ApplicationRunner {
             userManager.save(user);
 
             ftpServerFactory.setUserManager(userManager);
-            FtpServer ftpServer = ftpServerFactory.createServer();
+            ftpServer = ftpServerFactory.createServer();
 
             if (ftpServer.isStopped()) {
                 ftpServer.start();
@@ -71,7 +74,12 @@ public class FTPServerStarter implements ApplicationRunner {
 
             System.out.print("FTP : Client Connected");
         } catch (FtpException e) {
-            e.printStackTrace();
+            //e.printStackTrace();
         }
+    }
+
+    @PreDestroy
+    public void beforeShutdown() {
+        ftpServer.stop();
     }
 }

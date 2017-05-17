@@ -57,7 +57,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-rest</artifactId>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/net.sourceforge.nekohtml/nekohtml -->
+
         <dependency>
             <groupId>net.sourceforge.nekohtml</groupId>
             <artifactId>nekohtml</artifactId>
@@ -71,10 +71,6 @@
             <groupId>org.springframework.session</groupId>
             <artifactId>spring-session</artifactId>
         </dependency>
-        <!--<dependency>-->
-        <!--<groupId>org.springframework.boot</groupId>-->
-        <!--<artifactId>spring-boot-starter-thymeleaf</artifactId>-->
-        <!--</dependency>-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-integration</artifactId>
@@ -99,17 +95,8 @@
             <version>0.7</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.apache.vysper</groupId>
-            <artifactId>vysper-server</artifactId>
-            <version>0.7</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.apache.vysper.extensions/xep0124-xep0206-bosh -->
-        <dependency>
-            <groupId>org.apache.vysper.extensions</groupId>
-            <artifactId>xep0124-xep0206-bosh</artifactId>
-            <version>0.7</version>
-        </dependency>
+
+
         <dependency>
             <groupId>com.mitchellbosecke</groupId>
             <artifactId>pebble-spring-boot-starter</artifactId>
@@ -131,14 +118,8 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-websocket</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
+
+
 
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
@@ -186,14 +167,12 @@
             <artifactId>spring-boot-configuration-processor</artifactId>
             <optional>true</optional>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.apache.ftpserver/ftpserver -->
+
         <dependency>
             <groupId>org.apache.ftpserver</groupId>
             <artifactId>ftpserver</artifactId>
             <version>1.1.0</version>
         </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
@@ -205,14 +184,7 @@
             <artifactId>nextrtc-signaling-server</artifactId>
             <version>0.0.6</version>
         </dependency>
-        <!--<dependency>-->
-            <!--<groupId>org.hsqldb</groupId>-->
-            <!--<artifactId>hsqldb</artifactId>-->
-            <!--<scope>runtime</scope>-->
-        <!--</dependency>-->
-
-        <!-- https://mvnrepository.com/artifact/it.sauronsoftware/ftp4j -->
-        <dependency>
+         <dependency>
             <groupId>com.enterprisedt</groupId>
             <artifactId>edtFTPj</artifactId>
             <version>1.5.3</version>
@@ -220,21 +192,18 @@
 
 
         <dependency>
-                <groupId>org.kurento</groupId>
-                <artifactId>kurento-client</artifactId>
-                <version>6.6.1</version>
+            <groupId>org.kurento</groupId>
+            <artifactId>kurento-client</artifactId>
+            <version>LATEST</version>
         </dependency>
+
+
+
         <dependency>
-            <groupId>org.apache.vysper</groupId>
-            <artifactId>vysper-extensions</artifactId>
-            <version>0.7</version>
+            <groupId>io.moquette</groupId>
+            <artifactId>moquette-broker</artifactId>
+            <version>LATEST</version>
         </dependency>
-
-
-
-
-
-
 
 
         <dependency>
@@ -286,18 +255,19 @@
                 </configuration>
             </plugin>
 
+
             <plugin>
                 <groupId>org.asciidoctor</groupId>
                 <artifactId>asciidoctor-maven-plugin</artifactId>
                 <version>1.5.5</version>
                 <dependencies>
-                    <!-- Comment this section to use the default jruby artifact provided by the plugin -->
+
                     <dependency>
                         <groupId>org.jruby</groupId>
                         <artifactId>jruby-complete</artifactId>
                         <version>${jruby.version}</version>
                     </dependency>
-                    <!-- Comment this section to use the default AsciidoctorJ artifact provided by the plugin -->
+
                     <dependency>
                         <groupId>org.asciidoctor</groupId>
                         <artifactId>asciidoctorj</artifactId>
@@ -312,10 +282,6 @@
                         <doctype>book</doctype>
                         <toc>left</toc>
                         <toclevels>3</toclevels>
-                        <numbered></numbered>
-                        <hardbreaks></hardbreaks>
-                        <sectlinks></sectlinks>
-                        <sectanchors></sectanchors>
                     </attributes>
                 </configuration>
                 <executions>
@@ -328,51 +294,13 @@
                         <configuration>
                             <backend>html5</backend>
                             <sourceHighlighter>coderay</sourceHighlighter>
-                            <!--
-                            Scenarios for linking vs embedding assets:
-                            Link to both stylesheets and images::
-                              - don't set embedAssets option
-                              - set linkcss attribute to true
-                              - set imagesdir attribute to path relative to AsciiDoc source file
-                              <attributes>
-                                  <linkcss>true</linkcss>
-                                  <imagesdir>./images</imagesdir>
-                              </attributes>
-                            Embed stylesheets and images::
 
-                              - set embedAssets option to true
-                              - don't set linkcss attribute
-                              - set imagesdir attribute to path relative to project root
-                              <embedAssets>true</embedAssets>
-                              <attributes>
-                                  <imagesdir>src/docs/asciidoc/images</imagesdir>
-                              </attributes>
-                            Link to stylesheets but embed images::
-
-                              - set embedAssets option to true
-                              - set linkcss attribute to true
-                              - set imagesdir attribute to path relative to project root
-                              <embedAssets>true</embedAssets>
-                              <attributes>
-                                  <linkcss>true</linkcss>
-                                  <imagesdir>src/docs/asciidoc/images</imagesdir>
-                              </attributes>
-                            Embed stylesheets but link images (default)::
-
-                              - don't set embedAssets option
-                              - don't set linkcss attribute
-                              - set imagesdir attribute to path relative to AsciiDoc source file
-                              <attributes>
-                                  <imagesdir>./images</imagesdir>
-                              </attributes>
-                            IMPORTANT: When you enable image embedding, you must qualify the path the the imagesdir, as shown above.
-                            -->
                             <attributes>
                                 <imagesdir>./images</imagesdir>
                                 <toc>left</toc>
                                 <icons>font</icons>
                                 <sectanchors>true</sectanchors>
-                                <!-- set the idprefix to blank -->
+
                                 <idprefix/>
                                 <idseparator>-</idseparator>
                                 <docinfo1>true</docinfo1>
