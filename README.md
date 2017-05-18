@@ -15,12 +15,15 @@ keytool -keystore mqttclient.jks -genkey -keyalg RSA
 keytool -keystore mqttclient.jks -import -alias tomcat -file mqttserver.crt -trustcacerts
 ```
 
+##### Note:
+For Android Client Need to Convert JKS to BKS using this [Key tool](https://sourceforge.net/projects/portecle/)
+
 #### SSH Keystore
 ```
 keytool -genkey -keystore ./sshkey -keyalg RSA
 ```
 
-###Java Config For Client SSL Mqtt Ticket 
+### Java Config For Client SSL Mqtt Ticket 
 
 ```
 public SSLSocketFactory configureSSLSocketFactory() {
@@ -65,3 +68,12 @@ Port Binding
 | 7721  |FTP Port (Secure)                  |
 | 7723  |SSH Port                           |
 | 7555  |XMPP Port (Secure)                 |
+
+Generating ACL Password for MQTT
+-----------------------------------------------------
+
+Use this in this format in mqttacl.conf like username:[sha256format]
+```
+echo "password" | sha256sum
+
+```

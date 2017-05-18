@@ -2,9 +2,10 @@ package com.poovarasan.managers;
 
 import org.apache.vysper.xmpp.modules.extension.xep0160_offline_storage.AbstractOfflineStorageProvider;
 import org.apache.vysper.xmpp.stanza.Stanza;
+import org.mapdb.DB;
 
 import java.util.Collection;
-import java.util.concurrent.ConcurrentMap;
+import java.util.List;
 
 /**
  * Created by poovarasanv on 10/5/17.
@@ -12,19 +13,21 @@ import java.util.concurrent.ConcurrentMap;
  */
 public class XMPPOfflineStorage extends AbstractOfflineStorageProvider {
 
-    private ConcurrentMap<String, Stanza> stringStanzaConcurrentMap;
+    private DB db;
 
-    public XMPPOfflineStorage(ConcurrentMap<String, Stanza> stringStanzaConcurrentMap) {
-        this.stringStanzaConcurrentMap = stringStanzaConcurrentMap;
+    public XMPPOfflineStorage(DB db) {
+        this.db = db;
     }
 
     @Override
     protected void storeStanza(Stanza stanza) {
-
+        List<Stanza> allstanza = (List<Stanza>) db.getHashMap("xmpp_offline_storage").get(stanza.getTo().getNode());
+        allstanza.add(stanza);
+        db.getHashMap("xmpp_offline_storage").put(stanza.getTo().getNode(), allstanza);
     }
 
     @Override
     public Collection<Stanza> getStanzasForBareJID(String s) {
-        return null;
+        return (List<Stanza>) db.getHashMap("xmpp_offline_storage").get(s);
     }
 }

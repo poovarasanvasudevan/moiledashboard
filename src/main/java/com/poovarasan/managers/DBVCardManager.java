@@ -29,10 +29,10 @@ public class DBVCardManager implements VcardTempPersistenceManager {
         System.out.print(entity.getNode());
         Optional<User> user = userRepository.findByUsername(entity.getNode().replace("@localhost", ""));
         if(user.isPresent()) {
-            if(user.get().getVcard() !=null) {
-                return user.get().getVcard();
-            } else {
+            if (null == user.get().getVcard()) {
                 return null;
+            } else {
+                return user.get().getVcard();
             }
         }
         //return user.map(user1 -> user1.getVcard().getXml()).orElse(null);

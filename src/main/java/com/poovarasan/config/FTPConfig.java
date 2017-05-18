@@ -46,6 +46,7 @@ public class FTPConfig {
     Resource ftpResource;
 
 
+
     @Bean
     public UserManager userManager() {
         PropertiesUserManagerFactory propertiesUserManagerFactory = new PropertiesUserManagerFactory();
